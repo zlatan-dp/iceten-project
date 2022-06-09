@@ -1,0 +1,90 @@
+.contacts{
+    background-color: $bgc-about-gallery-contacts-footer;
+    background-image: linear-gradient(
+        to bottom, 
+        #ffffff 25%, #FFF5F6 25%,);
+}
+
+.contacts-card{
+    padding: 40px 32px;
+    background-color: $color-white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+.offices-card-info{
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.office-name{
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #F0D1A5;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 80px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+
+.office-city{
+    margin-bottom: 8px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+
+.office-about{
+    margin-bottom: 24px;
+    color: $text-color-second;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.contact-item{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+}
+
+.offices-card-times{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts-card-times-days{
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.contacts-card-times-time{
+    color: #FFA5BA;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.offices-card-contacts{
+    padding-top: 24px;
+}
+
+.contact-item{
+    color: #907E82;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}

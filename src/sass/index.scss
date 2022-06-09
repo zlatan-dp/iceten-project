@@ -2,6 +2,7 @@
 
 @import './utils/mixins';
 @import './utils/vars-color';
+@import './utils/hidden';
 
 @import './base/container';
 @import './base/reset';
@@ -9,3 +10,4 @@
 @import './components/title';
 
 @import './layout/footer';
+@import './layout/contacts';
