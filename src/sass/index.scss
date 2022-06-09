@@ -1,3 +1,9 @@
 @import './common';
+
 @import './utils/mixins';
+@import './utils/vars-color';
+
 @import './base/container';
+@import './base/reset';
+
+@import './components/title';
