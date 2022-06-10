@@ -3,7 +3,58 @@
 }
 
 .advantages-item:not(:last-child) {
-  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages-item::before {
+  content: '';
+  display: block;
+  height: 50px;
+  margin-bottom: 16px;
+
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+
+  @include tab {
+    margin-bottom: 36px;
+  }
+
+  @include desk {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url('/src/images/advantages-icon1-1x.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/advantages-icon1-2x.png');
+  }
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url('/src/images/advantages-icon2-1x.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/advantages-icon2-2x.png');
+  }
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url('/src/images/advantages-icon3-1x.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/advantages-icon3-2x.png');
+  }
 }
 
 .advantages-top-text {
