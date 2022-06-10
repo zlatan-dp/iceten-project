@@ -1,0 +1,56 @@
+.about {
+    background-color: $bgc-about-gallery-contacts-footer;
+    position: relative;
+}
+
+.top-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about-pic-cow {
+
+}
+
+.text-first {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 220px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    color: #000000;
+}
+
+.text-second {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+max-width: 220px;
+margin-bottom: 20px;
+
+color: #907E82;
+}
+
+.about-pic-milk {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+}
+
+.about-btn {
+    display: inline-flex;
+
+}
