@@ -3,6 +3,17 @@
     background-image: linear-gradient(
         to bottom, 
         #ffffff 25%, #FFF5F6 25%,);
+    .container{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+.card-list{
+    @include tab{
+        display: flex;
+        margin-bottom: 40px;
+    }
 }
 
 .contacts-card{
@@ -12,9 +23,16 @@
     border-radius: 24px;
     &:not(:last-child){
         margin-bottom: 20px;
+        @include tab{
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
     }
     &:last-child{
         margin-bottom: 32px;
+        @include tab{
+            margin-bottom: 0;
+        }
     }
 }
 
