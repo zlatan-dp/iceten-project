@@ -7,21 +7,33 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin-right: -14px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-right: -14px;
+    }
   }
 }
 
 .advantages-item {
   @include tab {
-    margin-right: 14px;
-
     width: calc(100% / 4 - 14px);
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-right: 14px;
+    }
+  }
+
+  @include desk {
+    width: 270px;
   }
 }
 
 .advantages-item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+  }
+
+  @include desk {
+    margin-right: 155px;
   }
 }
 
