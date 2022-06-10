@@ -1,0 +1,672 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  max-width: 100%;
+  min-width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "DM Sans", Tahoma, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.over-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+@media screen and (min-width: 768px) {
+  .over-title {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .over-title {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-btn__menuopen {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+.advantages {
+  background-color: #FFF5F6;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1279px) {
+  .advantages-list {
+    margin-right: -14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc(25% - 14px);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1279px) {
+  .advantages-item {
+    margin-right: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-item {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-item:not(:last-child) {
+    margin-right: 155px;
+  }
+}
+
+.advantages-item::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item::before {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-item::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url("../images/advantages-icon1-1x.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-item:nth-child(1)::before {
+    background-image: url("../images/advantages-icon1-2x.png");
+  }
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url("../images/advantages-icon2-1x.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-item:nth-child(2)::before {
+    background-image: url("../images/advantages-icon2-2x.png");
+  }
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url("../images/advantages-icon3-1x.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-item:nth-child(3)::before {
+    background-image: url("../images/advantages-icon3-2x.png");
+  }
+}
+
+.advantages-top-text {
+  margin-bottom: 10px;
+  font-family: "Titan One";
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .advantages-top-text {
+    margin-bottom: 13px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-top-text {
+    margin-bottom: 16px;
+    font-size: 58px;
+  }
+}
+
+.advantages-bottom-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .advantages-bottom-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-bottom-text {
+    font-size: 16px;
+  }
+}
+
+.contacts {
+  background-color: #FFF5F6;
+  background-image: linear-gradient(to bottom, #ffffff 25%, #FFF5F6 25%);
+}
+.contacts .container {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.card-list {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .card-list {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts-card {
+  padding: 40px 32px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.contacts-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-card:not(:last-child) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.offices-card-info {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .offices-card-info {
+    padding-bottom: 32px;
+  }
+}
+
+.office-name {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .office-name {
+    height: 28px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.cafe {
+  background-color: #F0D1A5;
+  width: 80px;
+}
+
+.foodtruck {
+  background-color: #C2E297;
+  width: 130px;
+}
+
+.office-city {
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .office-city {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
+.office-about {
+  color: #907E82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .office-about {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}
+
+.offices-card-times {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .offices-card-times {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts-card-times-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-card-times-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.contact-item {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907E82;
+}
+
+.contacts-card-times-days {
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .contacts-card-times-days {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-card-times-days {
+    font-size: 16px;
+  }
+}
+
+.contacts-card-times-time {
+  color: #FFA5BA;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+}
+@media screen and (min-width: 768px) {
+  .contacts-card-times-time {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-card-times-time {
+    font-size: 16px;
+  }
+}
+
+.offices-card-contacts {
+  padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .offices-card-contacts {
+    padding-top: 32px;
+  }
+}
+
+.contact-item {
+  color: #907E82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .contact-item {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-item {
+    font-size: 16px;
+  }
+}
+
+.contact-tel, .contact-email {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-tel:hover, .contact-tel:focus, .contact-email:hover, .contact-email:focus {
+  color: #D41443;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.btn-location {
+  border: none;
+  background-color: #D41443;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  min-width: 162px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-location::after {
+  content: "";
+  margin-left: 8px;
+  width: 8px;
+  height: 10px;
+  background-image: url(../images/arrow-icon.png);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .btn-location {
+    margin: 0;
+  }
+}
+
+.btn-franchise {
+  border: none;
+  background-color: #ffffff;
+  color: #D41443;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  min-width: 162px;
+  height: 44px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-franchise::after {
+  content: "";
+  margin-left: 13px;
+  width: 8px;
+  height: 10px;
+  background-image: url(../images/arrow-icon-red.png);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .btn-franchise {
+    margin: 0;
+    margin-left: 15px;
+  }
+}
+
+.footer {
+  background-color: #FFF5F6;
+  position: relative;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 8px;
+  }
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 78px;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .footer::after {
+    bottom: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-top-text {
+  max-width: 232px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-top-text {
+    margin-bottom: 12px;
+  }
+}
+
+.footer-text {
+  max-width: 200px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer-text {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.footer-list-item + .footer-list-item {
+  margin-left: 29px;
+}
+
+.footer-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #FEA5BB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list-icon {
+  fill: #FFFFFF;
+}
+
+.footer-contact {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.footer-tel {
+  color: #D41443;
+}
+
+.copyright {
+  margin: 0 auto;
+  padding-top: 16px;
+  max-width: 150px;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    max-width: 100%;
+    padding-top: 8px;
+  }
+}
+
+.copyright-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #907E82;
+}
+@media screen and (min-width: 768px) {
+  .copyright-text {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+}/*# sourceMappingURL=index.css.map */
