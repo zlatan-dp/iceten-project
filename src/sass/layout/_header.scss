@@ -2,12 +2,20 @@
   display: flex;
   width: 100%;
   height: 80px;
-  background-image: url('../images/logo-pic.png');
-  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 60px;
+}
+
+.header-nav {
+  display: none;
 }
 
 .header-btn {
   display: block;
-  width: 20px;
-  height: 12px;
+  border: none;
+  //width: 20px;
+  //height: 12px;
 }
