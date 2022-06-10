@@ -1,0 +1,88 @@
+.hero{
+    .container{
+        padding: 0;
+    }
+}
+
+.circle{
+    position: absolute;
+    z-index: 2;
+    top: 83px;
+    left: 36px;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-circle;
+}
+
+.icecrean-img{
+    height: 410px;
+    width: 171px;
+    z-index: 3;
+    background-image: url(../images/hero-icecream-mob-1x.png);
+    position: absolute;
+    left: 117px;
+    top: 92px;
+}
+
+.hero-bg{
+    background-color: $bgc-hero-header;
+    // z-index: 1;
+}
+
+.hero-content{
+    padding: 194px 82px 158px 20px;
+    position: relative;
+    z-index: 4;
+}
+
+.hero-title{
+    font-family: 'Titan One', Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-title-accent{
+    font-size: 48px;
+    line-height: 0.96;
+    color: $color-accent;
+}
+
+.hero-btn{
+    display: flex;
+}
+
+.btn-products{
+    background-color: $color-accent;
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    min-width: 63px;
+    font-size: 8px;
+    line-height: 1.25;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-about{
+    margin-left: 8px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    min-width: 83px;
+    font-size: 8px;
+    line-height: 1.25;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    color: $color-accent;
+}
