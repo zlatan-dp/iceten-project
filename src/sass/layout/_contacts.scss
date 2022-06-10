@@ -3,6 +3,19 @@
     background-image: linear-gradient(
         to bottom, 
         #ffffff 25%, #FFF5F6 25%,);
+    .container{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+.card-list{
+    margin-bottom: 32px;
+    @include tab{
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .contacts-card{
@@ -12,18 +25,22 @@
     border-radius: 24px;
     &:not(:last-child){
         margin-bottom: 20px;
-    }
-    &:last-child{
-        margin-bottom: 32px;
+        @include tab{
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
     }
 }
 
 .offices-card-info{
+    padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
+    @include tab{
+        padding-bottom: 32px;
+    }
 }
 
 .office-name{
-    margin-bottom: 20px;
     height: 16px;
     display: flex;
     align-items: center;
@@ -34,6 +51,12 @@
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    @include tab{
+        height: 28px;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
 }
 
 .cafe{
@@ -53,18 +76,38 @@
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+    @include tab{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
 }
 
 .office-about{
-    margin-bottom: 24px;
     color: $text-color-second;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
+    @include tab{
+        font-size: 14px;
+        line-height: 1.66;
+    }
+}
+
+.offices-card-times{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+    @include tab{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .contacts-card-times-item:not(:last-child){
     margin-bottom: 8px;
+    @include tab{
+        margin-bottom: 12px;
+    }
 }
 
 .contact-item{
@@ -76,17 +119,18 @@
     color: #907E82;
 }
 
-.offices-card-times{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
-}
-
 .contacts-card-times-days{
     color: #000000;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+    letter-spacing: 0.04em;
+    @include tab{
+        font-size: 14px;
+    }
+    @include desk{
+        font-size: 16px;
+    }
 }
 
 .contacts-card-times-time{
@@ -94,10 +138,19 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
+    @include tab{
+        font-size: 14px;
+    }
+    @include desk{
+        font-size: 16px;
+    }
 }
 
 .offices-card-contacts{
     padding-top: 24px;
+    @include tab{
+        padding-top: 32px;
+    }
 }
 
 .contact-item{
@@ -105,6 +158,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
+    @include tab{
+        font-size: 14px;
+        line-height: 1.83;
+    }
+    @include desk{
+        font-size: 16px;
+    }
+
 }
 
 .contact-tel, .contact-email{
@@ -116,9 +177,15 @@
     }
 }
 
+.contacts-btn{
+    @include tab{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .btn-location{
     border: none;
-    // margin-top: 32px;
     background-color: $color-accent;
     color: #ffffff;
     font-weight: 700;
@@ -138,6 +205,9 @@
         height: 10px;
         background-image: url(../images/arrow-icon.png);
         background-repeat: no-repeat;
+    }
+    @include tab{
+        margin: 0;
     }
 }
 
@@ -162,5 +232,9 @@
         height: 10px;
         background-image: url(../images/arrow-icon-red.png);
         background-repeat: no-repeat;
+    }
+    @include tab{
+        margin: 0;
+        margin-left: 15px;
     }
 }
