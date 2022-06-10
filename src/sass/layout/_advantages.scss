@@ -1,0 +1,45 @@
+.advantages {
+  background-color: $bgc-about-gallery-contacts-footer;
+}
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages-top-text {
+  margin-bottom: 10px;
+  font-family: 'Titan One';
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+
+  @include tab {
+    margin-bottom: 13px;
+
+    font-size: 48px;
+  }
+
+  @include desk {
+    margin-bottom: 16px;
+
+    font-size: 58px;
+  }
+}
+
+.advantages-bottom-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: $text-color-black;
+
+  @include tab {
+    font-size: 14px;
+  }
+
+  @include desk {
+    font-size: 16px;
+  }
+}
