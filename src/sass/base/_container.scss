@@ -1,11 +1,24 @@
 .container {
   max-width: 100%;
+  min-width: 200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 
   @include mob {
     max-width: 320px;
+  }
+
+  @include tab {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desk {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
