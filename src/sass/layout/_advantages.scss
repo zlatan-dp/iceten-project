@@ -28,32 +28,32 @@
 }
 
 .advantages-item:nth-child(1)::before {
-  background-image: url('/src/images/advantages-icon1-1x.png');
+  background-image: url('../images/advantages-icon1-1x.png');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/advantages-icon1-2x.png');
+    background-image: url('../images/advantages-icon1-2x.png');
   }
 }
 
 .advantages-item:nth-child(2)::before {
-  background-image: url('/src/images/advantages-icon2-1x.png');
+  background-image: url('../images/advantages-icon2-1x.png');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/advantages-icon2-2x.png');
+    background-image: url('../images/advantages-icon2-2x.png');
   }
 }
 
 .advantages-item:nth-child(3)::before {
-  background-image: url('/src/images/advantages-icon3-1x.png');
+  background-image: url('../images/advantages-icon3-1x.png');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/src/images/advantages-icon3-2x.png');
+    background-image: url('../images/advantages-icon3-2x.png');
   }
 }
 
