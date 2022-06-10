@@ -7,16 +7,16 @@
 }
 
 .header-logo {
-  margin-right: 60px;
+  justify-content: space-around;
+
 }
 
 .header-nav {
   display: none;
 }
 
-.header-btn {
+.header-btn__menuopen {
   display: block;
   border: none;
-  //width: 20px;
-  //height: 12px;
+  background-color: transparent;
 }
