@@ -1,0 +1,304 @@
+.hero{
+    .container{
+        padding: 0;
+        position: relative;
+        background-color: $bgc-hero-header;
+    }
+}
+
+.hero-img-circle{
+    position: absolute;
+    z-index: 2;
+    top: 83px;
+    left: 36px;
+    width: 282px;
+    height: 344px;
+    background-image: url(../images/Ellipse.png);
+    background-repeat: no-repeat;
+    @include tab{
+        top: 43px;
+        left: 248px;
+        width: 335px;
+        height: 333px;
+        background-image: url(../images/ellipse-all.png);
+    }
+    @include desk{
+        top: 54px;
+        left: 517px;
+        width: 534px;
+        height: 534px;
+        background-image: url(../images/ellipse-all-desk.png);
+    }
+}
+
+.hero-img-icecrean{
+    height: 410px;
+    width: 171px;
+    z-index: 3;
+    background-image: url(../images/hero-icecream-mob-1x.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 94px;
+    right: 32px;
+    @include tab{
+        background-image: url(../images/hero-icecream-tab-1x.png);
+        top: 80px;
+        right: 303px;
+        height: 336px;
+        width: 143px;
+    }
+    @include desk{
+        background-image: url(../images/hero-icecream-desk-1x.png);
+        top: 108px;
+        right: 408px;
+        height: 567px;
+        width: 236px;
+    }
+}
+
+.hero-img-milk{
+    @include tab{
+        background-image: url(../images/hero-milk-tab-1x.png);
+        width: 152px;
+        height: 154px;
+        position: absolute;
+        left: 32px;
+        bottom: 16px;
+    }
+    @include desk{
+        background-image: url(../images/hero-milk-desk-1x.png);
+        width: 213px;
+        height: 216px;
+        left: 16px;
+        bottom: 60px;
+    }
+}
+
+.hero-img-girl{
+    @include tab{
+        background-image: url(../images/hero-girl-tab-1x.png);
+        width: 190px;
+        height: 160px;
+        position: absolute;
+        right: 32px;
+        top: 265px;
+        z-index: 10;
+    }
+    @include desk{
+        background-image: url(../images/hero-girl-desk-1x.png);
+        width: 304px;
+        height: 241px;
+        right: 16px;
+        top: 424px;
+    }
+}
+
+.hero-bg-text-box{
+    display: none;
+    @include tab{
+        display: block;
+        width: 114px;
+        position: absolute;
+        left: 184px;
+        top: 287px;
+        z-index: 10;
+    }
+    @include desk{
+        width: 200px;
+        left: 229px;
+        top: 456px;
+    }
+}
+
+.hero-bg-text{
+    font-size: 8px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+    @include desk{
+        font-size: 14px;
+        line-height: 1.43;
+        margin-bottom: 20px;
+    }
+}
+
+.hero-bg-btn{
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    @include desk{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.hero-btn-logo{
+    fill: $color-accent;
+    align-items: center;
+    @include desk{
+        width: 10px;
+        height: 23px;
+    }
+}
+
+.hero-content{
+    padding: 194px 82px 158px 20px;
+    position: relative;
+    z-index: 10;
+    @include tab{
+        padding: 102px 32px 190px 32px;
+        height: 416px;
+    }
+    @include desk{
+        height: 664px;
+        padding: 147px 32px 316px 16px;
+    }
+}
+
+.hero-title{
+    font-family: 'Titan One', Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 218px;
+    @include tab{
+        font-size: 22px;
+        line-height: 1.25;
+        width: 162px;
+    }
+    @include desk{
+        font-size: 38px;
+        line-height: 1.18;
+        width: 277px;
+    }
+}
+
+.hero-title-accent{
+    font-size: 48px;
+    line-height: 0.96;
+    color: $color-accent;
+    @include tab{
+        font-size: 34px;
+        line-height: 0.91;
+    }
+    @include desk{
+        font-size: 58px;
+        line-height: 0.9;
+    }
+}
+
+.hero-numbers-list{
+    display: none;
+    @include tab{
+        display: block;
+    }
+}
+
+.hero-box{
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hero-numbers-item{
+    &:not(:last-child){
+        margin-bottom: 14px;
+    }
+    @include desk{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-end;
+    }
+}
+
+.hero-number{
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-accent;
+    position: relative;
+    @include desk{
+        font-size: 46px;
+        line-height: 1.15;
+    }
+    &::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        left: 26px;
+        top: -4px;
+        z-index: -1;
+        @include desk{
+            width: 30px;
+            height: 30px;
+            left: 40px;
+        }
+    }
+}
+
+.hero-unit{
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    color: #FFFFFF;
+    @include desk{
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+.hero-btn{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-products{
+    background-color: $color-accent;
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    min-width: 63px;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #FFFFFF;
+    @include desk{
+        height: 40px;
+        min-width: 107px;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+.btn-about{
+    margin-left: 8px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    height: 24px;
+    min-width: 83px;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $color-accent;
+    @include desk{
+        height: 40px;
+        min-width: 138px;
+        font-size: 14px;
+        line-height: 1.29;
+        margin-left: 12px;
+    }
+}
