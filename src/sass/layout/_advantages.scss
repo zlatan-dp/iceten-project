@@ -14,6 +14,8 @@
 }
 
 .advantages-item {
+  max-width: 230px;
+
   @include tab {
     width: calc(100% / 4 - 14px);
 
