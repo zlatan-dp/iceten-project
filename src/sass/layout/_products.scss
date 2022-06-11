@@ -96,11 +96,61 @@ height: 535px;
   &:focus {
   box-shadow: 0px 5px 12px 12px rgba(255, 184, 202, 0.69);
 }
+&::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mob {
+    top: -140px;
+    width: 100%;
+   height: 100%;
+   background-image: url(/src/images/products-icecream-1-mob-1x.png);
+  }
+  @include tab {
+    top: -140px;
+    width: 100%;
+   height: 100%;
+   background-image: url(/src/images/products-icecream-1-tab-1x.png);
+  }
+  @include desk {
+    top: -250px;
+    width: 100%;
+   height: 100%;
+   background-image: url(/src/images/products-icecream-1-desk-1x.png);
+  }
+}
 }
 
 .ice-coffee {
   background-color: $bgc-products-crema;
   @include transition (box-shadow);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include mob {
+      top: -140px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-2-mob-1x.png);
+    }
+    @include tab {
+      top: -140px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-2-tab-1x.png);
+    }
+    @include desk {
+      top: -250px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-2-desk-1x.png);
+    }
+  }
   @include tab {
     margin-right: 16px;
   }
@@ -116,27 +166,35 @@ height: 535px;
 .milkshakes {
   background-color: $bgc-products-green;
   @include transition (box-shadow);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include mob {
+      top: -140px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-3-mob-1x.png);
+    }
+    @include tab {
+      top: -140px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-3-tab-1x.png);
+    }
+    @include desk {
+      top: -250px;
+      width: 100%;
+     height: 100%;
+     background-image: url(/src/images/products-icecream-3-desk-1x.png);
+    }
+  }
   &:hover,
   &:focus {
     box-shadow: 0px 5px 12px 12px rgba(194, 226, 151, 0.69);
 }
-}
-
-.products-img {
- position: absolute; 
- width: 100%;
- height: 100%;
- left: 0;
- top: 0;
- @include mob {
-    transform: translateY(-28%);
- }
- @include tab {
-    transform: translateY(-28%)
- }
- @include desk {
-    transform: translateY(-50%);
- }
 }
 
 .products-card-title {
