@@ -1,6 +1,6 @@
 <!--HEADER-->
-<header class="header container">
-  <div class="wrapper-nav">
+<header class="header">
+  <div class="wrapper-nav container">
     <a href="https://IceCream.com">
       <img
         src="./images/logo-pic.png"
@@ -10,7 +10,32 @@
         class="header-logo"
       />
     </a>
-    <button type="button" class="header-btn__menuopen is-hidden">
+    <button type="button" class="menu-close-btn">
+      <svg width="14" height="14">
+        <use
+          class="icon-cross"
+          href="./images/svg/btn-close-mob-menu.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
+    <ul class="mob-menu-list list">
+      <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Home</a>
+      </li>
+      <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">About us</a>
+      </li>
+      <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">How it`s made?</a>
+      </li>
+      <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Our products</a>
+      </li>
+      <li class="mob-menu-list__item">
+        <a href="" class="mob-menu-list__link link">Contact</a>
+      </li>
+    </ul>
+    <button type="button" class="menu-open-btn">
       <svg width="20" height="12" aria-label="Переключатель мобильного меню">
         <use
           class="icon-open"
@@ -18,8 +43,9 @@
         ></use>
       </svg>
     </button>
+    <button type="button" class="menu-order-btn">Buy Now</button>
   </div>
-  <section class="mob-menu is-hidden">
+  <!--<section class="mob-menu is-hidden">
     <button type="button" class="menu-close-btn">
       <svg width="14" height="14">
         <use
@@ -48,5 +74,5 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section>-->
 </header>
