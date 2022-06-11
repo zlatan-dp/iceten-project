@@ -4,18 +4,24 @@
         padding: 0;
     }
 }
+.hero-bg{
+    position: relative;
+}
 
 .circle{
     position: absolute;
     z-index: 2;
-    // top: 83px;
+    top: 83px;
+    right: 0;
     // left: 25%;
     width: 346px;
     height: 344px;
-    border-radius: 50%;
-    border: none;
-    background-color: $color-circle;
-    background-size: cover;
+    background-image: url(../images/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+    // border-radius: 50%;
+    // border: none;
+    // background-color: $color-circle;
+    // background-size: cover;
 }
 
 .icecrean-img{
@@ -24,14 +30,16 @@
     z-index: 3;
     background-image: url(../images/hero-icecream-mob-1x.png);
     position: absolute;
-    // left: 117px;
+    top: 94px;
+    right: 32px;
+    // left: 0;
     // bottom: 0;
 }
 
 .hero-content{
     padding: 194px 82px 158px 20px;
-    // position: relative;
-    // z-index: 4;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-title{
@@ -43,6 +51,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    width: 218px;
 }
 
 .hero-title-accent{
