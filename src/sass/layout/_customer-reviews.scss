@@ -1,0 +1,80 @@
+.reviews {
+    background-color: $bgc-reviews;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__foto {
+        width: 85px;
+        height: 85px;
+        border-radius: 44px;
+        margin-bottom: 32px;
+    }
+
+    &__box{
+        padding: 30px 50px 17px 50px;
+        margin-bottom: 16px;
+        line-height: 30px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.55;
+        text-align: center;
+        color: $text-color-black;
+        max-width: 157px;
+        
+        &::before {
+            content: '';
+            display: block;
+            height: 40px;
+            width: 54px;
+            background-image: url('../images/brackets.png');
+            background-size: contain;
+        }
+    }
+
+    &__slider{
+        width: 172px;
+        height: 73px;
+        position: relative;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        text-align: center;
+        color: $text-color-black;
+        padding-top: 20px;
+        
+
+        &::before{
+            content: '';
+            display: block;
+            background-image: url('../images/group-of-circles.png');
+            width: 32px;
+            height: 4px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            background-image: url('../images/hr-dots.png');
+            width: 72px;
+            height: 12px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0;
+        }
+    }
+}
