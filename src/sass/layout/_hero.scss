@@ -14,21 +14,21 @@
     right: 0;
     width: 282px;
     height: 344px;
-    background-image: url(../images/Ellipse.png);
+    background-image: url('../images/ellipse.png');
     background-repeat: no-repeat;
     @include tab{
         top: 43px;
         left: 248px;
         width: 335px;
         height: 333px;
-        background-image: url(../images/ellipse-all.png);
+        background-image: url('../images/ellipse-all.png');
     }
     @include desk{
         top: 54px;
         left: 517px;
         width: 534px;
         height: 534px;
-        background-image: url(../images/ellipse-all-desk.png);
+        background-image: url('../images/ellipse-all-desk.png');
     }
 }
 
@@ -36,20 +36,20 @@
     height: 410px;
     width: 171px;
     z-index: 3;
-    background-image: url(../images/hero-icecream-mob-1x.png);
+    background-image: url('../images/hero-icecream-mob-1x.png');
     background-repeat: no-repeat;
     position: absolute;
     top: 94px;
     right: 32px;
     @include tab{
-        background-image: url(../images/hero-icecream-tab-1x.png);
+        background-image: url('../images/hero-icecream-tab-1x.png');
         top: 80px;
         right: 303px;
         height: 336px;
         width: 143px;
     }
     @include desk{
-        background-image: url(../images/hero-icecream-desk-1x.png);
+        background-image: url('../images/hero-icecream-desk-1x.png');
         top: 108px;
         right: 408px;
         height: 567px;
@@ -59,7 +59,7 @@
 
 .hero-img-milk{
     @include tab{
-        background-image: url(../images/hero-milk-tab-1x.png);
+        background-image: url('../images/hero-milk-tab-1x.png');
         width: 152px;
         height: 154px;
         position: absolute;
@@ -67,7 +67,7 @@
         bottom: 16px;
     }
     @include desk{
-        background-image: url(../images/hero-milk-desk-1x.png);
+        background-image: url('../images/hero-milk-desk-1x.png');
         width: 213px;
         height: 216px;
         left: 16px;
@@ -77,7 +77,7 @@
 
 .hero-img-girl{
     @include tab{
-        background-image: url(../images/hero-girl-tab-1x.png);
+        background-image: url('../images/hero-girl-tab-1x.png');
         width: 190px;
         height: 160px;
         position: absolute;
@@ -86,7 +86,7 @@
         z-index: 10;
     }
     @include desk{
-        background-image: url(../images/hero-girl-desk-1x.png);
+        background-image: url('../images/hero-girl-desk-1x.png');
         width: 304px;
         height: 241px;
         right: 16px;
