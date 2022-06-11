@@ -2,11 +2,17 @@
 
 @import './utils/mixins';
 @import './utils/vars-color';
+@import './utils/hidden';
 
 @import './base/container';
 @import './base/reset';
 
 @import './components/title';
 
-@import './layout/mobile-menu';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
 @import './layout/mobile-gallery';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/mobile-menu';

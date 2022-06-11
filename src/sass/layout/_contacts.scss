@@ -1,0 +1,240 @@
+.contacts{
+    background-color: $bgc-about-gallery-contacts-footer;
+    background-image: linear-gradient(
+        to bottom, 
+        #ffffff 25%, #FFF5F6 25%,);
+    .container{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+.card-list{
+    margin-bottom: 32px;
+    @include tab{
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contacts-card{
+    padding: 40px 32px;
+    background-color: $color-white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+        @include tab{
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.offices-card-info{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+    @include tab{
+        padding-bottom: 32px;
+    }
+}
+
+.office-name{
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    @include tab{
+        height: 28px;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.cafe{
+    background-color: #F0D1A5;
+    width: 80px;
+}
+
+.foodtruck{
+    background-color: #C2E297;
+    width: 130px;
+}
+
+.office-city{
+    margin-bottom: 8px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    @include tab{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+}
+
+.office-about{
+    color: $text-color-second;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    @include tab{
+        font-size: 14px;
+        line-height: 1.66;
+    }
+}
+
+.offices-card-times{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+    @include tab{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.contacts-card-times-item:not(:last-child){
+    margin-bottom: 8px;
+    @include tab{
+        margin-bottom: 12px;
+    }
+}
+
+.contact-item{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+}
+
+.contacts-card-times-days{
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    @include tab{
+        font-size: 14px;
+    }
+    @include desk{
+        font-size: 16px;
+    }
+}
+
+.contacts-card-times-time{
+    color: #FFA5BA;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    @include tab{
+        font-size: 14px;
+    }
+    @include desk{
+        font-size: 16px;
+    }
+}
+
+.offices-card-contacts{
+    padding-top: 24px;
+    @include tab{
+        padding-top: 32px;
+    }
+}
+
+.contact-item{
+    color: #907E82;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    @include tab{
+        font-size: 14px;
+        line-height: 1.83;
+    }
+    @include desk{
+        font-size: 16px;
+    }
+
+}
+
+.contact-tel, .contact-email{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+    }
+}
+
+.contacts-btn{
+    @include tab{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn-location{
+    border: none;
+    background-color: $color-accent;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    min-width: 162px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after{
+        content: "";
+        margin-left: 8px;
+        width: 8px;
+        height: 10px;
+        background-image: url(../images/arrow-icon.png);
+        background-repeat: no-repeat;
+    }
+    @include tab{
+        margin: 0;
+    }
+}
+
+.btn-franchise{
+    border: none;
+    background-color: #ffffff;
+    color: $color-accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    min-width: 162px;
+    height: 44px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after{
+        content: "";
+        margin-left: 13px;
+        width: 8px;
+        height: 10px;
+        background-image: url(../images/arrow-icon-red.png);
+        background-repeat: no-repeat;
+    }
+    @include tab{
+        margin: 0;
+        margin-left: 15px;
+    }
+}
