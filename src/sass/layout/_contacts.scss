@@ -16,6 +16,9 @@
         display: flex;
         justify-content: space-between;
     }
+    @include desk{
+        margin-bottom: 58px;
+    }
 }
 
 .contacts-card{
@@ -29,6 +32,9 @@
             margin-right: 32px;
             margin-bottom: 0;
         }
+    }
+    @include desk{
+        padding: 40px;
     }
 }
 
@@ -80,6 +86,10 @@
         font-size: 14px;
         margin-bottom: 12px;
     }
+    @include desk{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
 }
 
 .office-about{
@@ -90,6 +100,10 @@
     @include tab{
         font-size: 14px;
         line-height: 1.66;
+    }
+    @include desk{
+        font-size: 16px;
+        line-height: 1.83;
     }
 }
 
@@ -209,6 +223,9 @@
     @include tab{
         margin: 0;
     }
+    @include desk{
+        min-width: 200px;
+    }
 }
 
 .btn-franchise{
@@ -236,5 +253,8 @@
     @include tab{
         margin: 0;
         margin-left: 15px;
+    }
+    @include desk{
+        min-width: 180px;
     }
 }
