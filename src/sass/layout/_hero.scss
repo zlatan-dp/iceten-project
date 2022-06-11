@@ -5,10 +5,8 @@
         background-color: $bgc-hero-header;
     }
 }
-.hero-bg{
-}
 
-.circle{
+.hero-img-circle{
     position: absolute;
     z-index: 2;
     top: 83px;
@@ -22,6 +20,7 @@
         left: 248px;
         width: 335px;
         height: 333px;
+        background-image: url(../images/ellipse-all.png);
     }
     @include desk{
         top: 54px;
@@ -31,7 +30,7 @@
     }
 }
 
-.icecrean-img{
+.hero-img-icecrean{
     height: 410px;
     width: 171px;
     z-index: 3;
@@ -56,10 +55,70 @@
     }
 }
 
+.hero-img-milk{
+    @include tab{
+        background-image: url(../images/hero-milk-tab-1x.png);
+        width: 152px;
+        height: 154px;
+        position: absolute;
+        left: 32px;
+        // top: 0;
+        bottom: 16px;
+    }
+}
+
+.hero-img-girl{
+    @include tab{
+        background-image: url(../images/hero-girl-tab-1x.png);
+        width: 190px;
+        height: 160px;
+        position: absolute;
+        right: 32px;
+        top: 265px;
+        z-index: 10;
+    }
+}
+
+.hero-bg-text-box{
+    display: none;
+    @include tab{
+        display: block;
+        width: 114px;
+        position: absolute;
+        left: 184px;
+        top: 287px;
+        z-index: 10;
+    }
+}
+
+.hero-bg-text{
+    font-size: 8px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+}
+
+.hero-bg-btn{
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.hero-btn-logo{
+    fill: $color-accent;
+}
+
 .hero-content{
     padding: 194px 82px 158px 20px;
     position: relative;
     z-index: 10;
+    @include tab{
+        padding: 102px 32px 190px 32px;
+        height: 416px;
+    }
 }
 
 .hero-title{
@@ -70,18 +129,83 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 20px;
     width: 218px;
+
+    @include tab{
+        font-size: 22px;
+        line-height: 1.25;
+        width: 162px;
+        margin-right: 490px;
+    }
 }
 
 .hero-title-accent{
     font-size: 48px;
     line-height: 0.96;
     color: $color-accent;
+    @include tab{
+        font-size: 34px;
+        line-height: 0.91;
+    }
+}
+
+.hero-numbers-list{
+    display: none;
+    @include tab{
+        display: block;
+    }
+}
+
+.hero-box{
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hero-numbers-item{
+    &:not(:last-child){
+        margin-bottom: 14px;
+    }
+}
+
+.hero-number{
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    // text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-accent;
+    position: relative;
+    &::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        left: 26px;
+        top: -4px;
+        z-index: -1;
+    }
+}
+
+.hero-unit{
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .hero-btn{
     display: flex;
+    margin-top: 20px;
+    // @include tab{
+    //     margin-top: 12px;
+    // }
 }
 
 .btn-products{
