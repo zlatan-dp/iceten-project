@@ -45,5 +45,8 @@
 <symbol id="icon-burger-btn-open" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.297h45.714M0 16.011h45.714M0 29.725h45.714"></path>
 </symbol>
+<symbol id="icon-Vector-1" viewBox="0 0 26 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+</symbol>
 </defs>
 </svg>
