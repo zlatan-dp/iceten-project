@@ -1,27 +1,34 @@
 .hero{
-    background-color: $bgc-hero-header;
     .container{
         padding: 0;
+        position: relative;
+        background-color: $bgc-hero-header;
     }
 }
 .hero-bg{
-    position: relative;
 }
 
 .circle{
     position: absolute;
     z-index: 2;
     top: 83px;
-    right: 0;
-    // left: 25%;
-    width: 346px;
+    left: 36px;
+    width: 282px;
     height: 344px;
-    background-image: url(../images/Ellipse\ 3.png);
+    background-image: url(../images/Ellipse.png);
     background-repeat: no-repeat;
-    // border-radius: 50%;
-    // border: none;
-    // background-color: $color-circle;
-    // background-size: cover;
+    @include tab{
+        top: 43px;
+        left: 248px;
+        width: 335px;
+        height: 333px;
+    }
+    @include desk{
+        top: 54px;
+        left: 517px;
+        width: 534px;
+        height: 534px;
+    }
 }
 
 .icecrean-img{
@@ -29,11 +36,24 @@
     width: 171px;
     z-index: 3;
     background-image: url(../images/hero-icecream-mob-1x.png);
+    background-repeat: no-repeat;
     position: absolute;
     top: 94px;
     right: 32px;
-    // left: 0;
-    // bottom: 0;
+    @include tab{
+        background-image: url(../images/hero-icecream-tab-1x.png);
+        top: 80px;
+        right: 303px;
+        height: 336px;
+        width: 143px;
+    }
+    @include desk{
+        background-image: url(../images/hero-icecream-desk-1x.png);
+        top: 108px;
+        right: 408px;
+        height: 567px;
+        width: 236px;
+    }
 }
 
 .hero-content{
