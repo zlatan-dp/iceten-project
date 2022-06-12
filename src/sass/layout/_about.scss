@@ -61,7 +61,6 @@
     @include tab {
         max-width: 334px;
         font-size: 14px;
-
     }
 
     @include desk {
@@ -80,7 +79,7 @@
     max-width: 220px;
     margin-bottom: 20px;
 
-color: $text-color-second;
+    color: $text-color-second;
 
     @include tab {
         max-width: 334px;
@@ -129,11 +128,38 @@ color: $text-color-second;
 
     align-items: center;
     justify-content: center;
+
+    &::after{
+        content: "";
+        margin-left: 8px;
+        width: 8px;
+        height: 10px;
+        background-image: url(../images/arrow-icon-red.png);
+        background-repeat: no-repeat;
+    }
+
+    @include transition(background-color );
+
+    &:hover,
+    &:focus {
+    background: $color-accent;
+    color: $color-white;
+        &::after{
+            content: "";
+            margin-left: 8px;
+            width: 8px;
+            height: 10px;
+            background-image: url(../images/arrow-icon.png);
+            background-repeat: no-repeat;
+        }
+    }
 }
 
-.about-icon-btn {
-    margin-left: 14px;
-}
+// .about-icon-btn {
+//     margin-left: 14px;
+
+// }
+
 
 .aout-box-text {
     @include tab {
