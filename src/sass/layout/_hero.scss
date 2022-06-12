@@ -1,27 +1,28 @@
 .hero{
+    background-color: $bgc-hero-header;
+    overflow: hidden;
     .container{
-        padding: 0;
+        // padding: 0;
         position: relative;
-        background-color: $bgc-hero-header;
     }
 }
 
 .hero-img-circle{
+    left: 0;
+    top: 0;
     position: absolute;
     z-index: 2;
     top: 83px;
-    // left: 36px;
-    right: 0;
-    width: 282px;
+    left: 36px;
+    width: 344px;
     height: 344px;
-    background-image: url('../images/ellipse.png');
+    background-image: url('../images/ellipse-all.png');
     background-repeat: no-repeat;
     @include tab{
         top: 43px;
         left: 248px;
         width: 335px;
         height: 333px;
-        background-image: url('../images/ellipse-all.png');
     }
     @include desk{
         top: 54px;
@@ -79,10 +80,10 @@
     @include tab{
         background-image: url('../images/hero-girl-tab-1x.png');
         width: 190px;
-        height: 160px;
+        height: 150px;
         position: absolute;
         right: 32px;
-        top: 265px;
+        top: 275px;
         z-index: 10;
     }
     @include desk{
@@ -146,16 +147,22 @@
 }
 
 .hero-content{
-    padding: 194px 0 158px 20px;
+    padding-top: 194px;
+    padding-bottom: 158px;
+    // padding: 194px 0 158px 20px;
     position: relative;
     z-index: 10;
     @include tab{
-        padding: 102px 32px 190px 32px;
+        padding-top: 102px;
+        padding-bottom: 190px;
+        // padding: 102px 32px 190px 32px;
         height: 416px;
     }
     @include desk{
+        padding-top: 147px;
+        padding-bottom: 316px;
         height: 664px;
-        padding: 147px 32px 316px 16px;
+        // padding: 147px 32px 316px 16px;
     }
 }
 
@@ -209,6 +216,7 @@
 }
 
 .hero-numbers-item{
+    position: relative;
     &:not(:last-child){
         margin-bottom: 14px;
     }
@@ -228,7 +236,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $color-accent;
-    position: relative;
+
     @include desk{
         font-size: 46px;
         line-height: 1.15;
@@ -247,7 +255,7 @@
         @include desk{
             width: 30px;
             height: 30px;
-            left: 40px;
+            left: 62px;
         }
     }
 }
