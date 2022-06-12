@@ -3,19 +3,21 @@
   width: 100%;
   height: 80px;
   padding-top: 8px;
-  padding-bottom: 8px;
+
+  z-index: 99;
 
   @include tab {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+  }
+
+  @include desk {
+    padding-top: 40px;
   }
 }
 
 .wrapper-nav {
   display: flex;
   align-items: center;
-  position: absolute;
-  z-index: 10;
   justify-content: space-between;
   margin-left: 0;
 
@@ -29,19 +31,52 @@
   border: none;
   background-color: transparent;
   margin-left: auto;
+
+  @include tab {
+    margin-left: 291px;
+  }
   @include desk {
     display: none;
   }
 }
 
-.mob-menu-list {
+.nav-menu__list {
   display: none;
+
+  @include desk {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+  }
 }
 
-.menu-order-btn {
+.nav-menu__item {
+  margin-left: 35px;
+  padding: 5px;
+  width: max-content;
+}
+
+.nav-menu__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+
+.nav-menu__link.current {
+  color: #d41443;
+}
+
+.menu-order__btn {
   display: none;
   @include tab {
     display: block;
+    max-width: 160px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -49,9 +84,9 @@
     color: #d41443;
     background-color: #fafafa;
     border-color: transparent;
-    padding: 9px 36px;
+    padding: 10px 30px;
 
-    margin-left: 32px;
+    margin-left: 30px;
     .container {
       display: flex;
     }
@@ -62,6 +97,13 @@
       height: 8px;
       border-radius: 2px;
       margin-left: 12px;
+    }
+  }
+  @include desk {
+    margin-left: 140px;
+    padding: 10px 34px;
+    &:hover {
+      background-color: #ecebeb;
     }
   }
 }
