@@ -23,7 +23,11 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $text-color-accent-second;
-
+  @include tab {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
   @include desk {
     font-size: 30px;
     line-height: 1.13;
