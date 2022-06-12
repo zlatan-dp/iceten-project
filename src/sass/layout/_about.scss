@@ -6,11 +6,45 @@
 .top-text {
     text-align: center;
     margin-bottom: 15px;
+
+
 }
 
 .about-title {
     text-align: center;
     margin-bottom: 32px;
+
+    @include tab {
+        margin-bottom: 40px;
+        }
+    @include desk {
+        margin-bottom: 80px;
+        }
+}
+
+.about-box {
+    @include tab {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    @include desk {
+    justify-content: flex-start;
+    align-items: center;
+    }
+}
+
+.box-cow {
+    margin-bottom: 40px;
+    @include tab {
+        max-width: 336px;
+        margin-bottom: 0;
+    }
+
+    @include desk {
+        min-width: 501px;
+        margin-right: 139px;
+    }
 }
 
 .text-first {
@@ -21,9 +55,20 @@
     line-height: 1.6;
     max-width: 220px;
     margin-bottom: 40px;
-    margin-top: 40px;
 
     color: $text-color-black;
+
+    @include tab {
+        max-width: 334px;
+        font-size: 14px;
+
+    }
+
+    @include desk {
+        min-width: 463px;
+        font-size: 16px;
+        line-height: 1.75;
+    }
 }
 
 .text-second {
@@ -36,6 +81,18 @@
     margin-bottom: 20px;
 
 color: $text-color-second;
+
+    @include tab {
+        max-width: 334px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    @include desk {
+        min-width: 463px;
+        font-size: 16px;
+        line-height: 1.75;
+    }
 }
 
 .about-pic-milk {
@@ -44,6 +101,15 @@ color: $text-color-second;
     left: 0;
     right: 0;
     bottom: 200px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: none;
+    }
+    @include tab {
+    bottom: 0;
+    }
+    @include desk {
+    bottom: 0;
+    }
 }
 
 .about-btn {
@@ -67,4 +133,13 @@ color: $text-color-second;
 
 .about-icon-btn {
     margin-left: 14px;
+}
+
+.aout-box-text {
+    @include tab {
+        max-width: 334px;
+    }
+    @include desk {
+
+    }
 }
