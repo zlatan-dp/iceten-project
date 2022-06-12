@@ -15,3 +15,11 @@
     @content;
   }
 }
+
+// Транзишн
+
+@mixin transition($tp, $td: 300ms, $tf: ease-in-out) {
+  transition-property: $tp;
+  transition-duration: $td;
+  transition-timing-function: $tf;
+}

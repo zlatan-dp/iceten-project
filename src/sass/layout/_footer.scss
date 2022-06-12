@@ -36,6 +36,11 @@
   @include tab {
     margin-bottom: 12px;
   }
+
+  @include desk {
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
 }
 
 .footer-text {
@@ -44,6 +49,10 @@
 
   @include tab {
     margin-bottom: 0px;
+  }
+
+  @include desk {
+    max-width: 100%;
   }
 }
 
@@ -65,6 +74,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background: $color-accent;
+  }
+
+  @include tab {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer-list-icon {
@@ -78,6 +99,16 @@
   text-align: right;
   color: $text-color-black;
   margin-bottom: 40px;
+
+  @include tab {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  @include desk {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer-tel {
