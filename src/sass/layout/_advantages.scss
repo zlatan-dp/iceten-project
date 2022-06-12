@@ -1,5 +1,9 @@
 .advantages {
   background-color: $bgc-about-gallery-contacts-footer;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
 }
 
 .advantages-list {
@@ -14,6 +18,8 @@
 }
 
 .advantages-item {
+  max-width: 230px;
+
   @include tab {
     width: calc(100% / 4 - 14px);
 
