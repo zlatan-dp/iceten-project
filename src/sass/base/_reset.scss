@@ -5,35 +5,39 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul,
 ol {
-    padding-left: 0;
-    margin: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
-    font-family: "DM Sans", Tahoma, sans-serif;
+  font-family: 'DM Sans', Tahoma, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .link {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
-
