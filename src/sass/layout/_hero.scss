@@ -277,6 +277,9 @@
 }
 
 .btn-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $color-accent;
     border-radius: 20px;
     border: none;
@@ -294,6 +297,9 @@
 }
 
 .btn-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 8px;
     background-color: #FFFFFF;
     border-radius: 20px;
