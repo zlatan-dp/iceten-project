@@ -1,339 +1,341 @@
-.hero{
-    background-color: $bgc-hero-header;
-    overflow: hidden;
-    .container{
-        // padding: 0;
-        position: relative;
-    }
+.hero {
+  background-color: $bgc-hero-header;
+  overflow: hidden;
+  .container {
+    // padding: 0;
+    position: relative;
+  }
 }
 
-.hero-img-circle{
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 2;
-    top: 83px;
-    left: 36px;
-    width: 344px;
-    height: 344px;
-    background-color: $color-circle;
-    border-radius: 50%;
-    border: none;
-    @include tab{
-        top: 43px;
-        left: 248px;
-        width: 335px;
-        height: 333px;
-    }
-    @include desk{
-        top: 54px;
-        left: 517px;
-        width: 534px;
-        height: 534px;
-    }
+.hero-img-circle {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  top: 83px;
+  left: 36px;
+  width: 344px;
+  height: 344px;
+  background-color: $color-circle;
+  border-radius: 50%;
+  border: none;
+  @include tab {
+    top: 43px;
+    left: 248px;
+    width: 335px;
+    height: 333px;
+  }
+  @include desk {
+    top: 54px;
+    left: 517px;
+    width: 534px;
+    height: 534px;
+  }
 }
 
-.hero-img-icecrean{
-    height: 410px;
-    width: 171px;
-    z-index: 3;
-    background-image: url('../images/hero-icecream-mob-1x.png');
-    background-repeat: no-repeat;
+.hero-img-icecrean {
+  height: 410px;
+  width: 171px;
+  z-index: 3;
+  background-image: url('../images/hero-icecream-mob-1x.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 94px;
+  right: 32px;
+  @include tab {
+    background-image: url('../images/hero-icecream-tab-1x.png');
+    top: 80px;
+    right: 303px;
+    height: 336px;
+    width: 143px;
+  }
+  @include desk {
+    background-image: url('../images/hero-icecream-desk-1x.png');
+    top: 108px;
+    right: 408px;
+    height: 567px;
+    width: 236px;
+  }
+}
+
+.hero-img-milk {
+  @include tab {
+    background-image: url('../images/hero-milk-tab-1x.png');
+    width: 152px;
+    height: 154px;
     position: absolute;
-    top: 94px;
+    left: 32px;
+    bottom: 16px;
+  }
+  @include desk {
+    background-image: url('../images/hero-milk-desk-1x.png');
+    width: 213px;
+    height: 216px;
+    left: 16px;
+    bottom: 60px;
+  }
+}
+
+.hero-img-girl {
+  @include tab {
+    background-image: url('../images/hero-girl-tab-1x.png');
+    width: 190px;
+    height: 150px;
+    position: absolute;
     right: 32px;
-    @include tab{
-        background-image: url('../images/hero-icecream-tab-1x.png');
-        top: 80px;
-        right: 303px;
-        height: 336px;
-        width: 143px;
-    }
-    @include desk{
-        background-image: url('../images/hero-icecream-desk-1x.png');
-        top: 108px;
-        right: 408px;
-        height: 567px;
-        width: 236px;
-    }
+    top: 275px;
+    z-index: 10;
+  }
+  @include desk {
+    background-image: url('../images/hero-girl-desk-1x.png');
+    width: 304px;
+    height: 241px;
+    right: 16px;
+    top: 424px;
+  }
 }
 
-.hero-img-milk{
-    @include tab{
-        background-image: url('../images/hero-milk-tab-1x.png');
-        width: 152px;
-        height: 154px;
-        position: absolute;
-        left: 32px;
-        bottom: 16px;
-    }
-    @include desk{
-        background-image: url('../images/hero-milk-desk-1x.png');
-        width: 213px;
-        height: 216px;
-        left: 16px;
-        bottom: 60px;
-    }
+.hero-bg-text-box {
+  display: none;
+  @include tab {
+    display: block;
+    width: 114px;
+    position: absolute;
+    left: 184px;
+    top: 287px;
+    z-index: 10;
+  }
+  @include desk {
+    width: 200px;
+    left: 229px;
+    top: 456px;
+  }
 }
 
-.hero-img-girl{
-    @include tab{
-        background-image: url('../images/hero-girl-tab-1x.png');
-        width: 190px;
-        height: 150px;
-        position: absolute;
-        right: 32px;
-        top: 275px;
-        z-index: 10;
-    }
-    @include desk{
-        background-image: url('../images/hero-girl-desk-1x.png');
-        width: 304px;
-        height: 241px;
-        right: 16px;
-        top: 424px;
-    }
+.hero-bg-text {
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 20px;
+  }
 }
 
-.hero-bg-text-box{
-    display: none;
-    @include tab{
-        display: block;
-        width: 114px;
-        position: absolute;
-        left: 184px;
-        top: 287px;
-        z-index: 10;
-    }
-    @include desk{
-        width: 200px;
-        left: 229px;
-        top: 456px;
-    }
+.hero-bg-btn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  @include desk {
+    width: 26px;
+    height: 26px;
+  }
 }
 
-.hero-bg-text{
-    font-size: 8px;
-    line-height: 1.5;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 8px;
-    @include desk{
-        font-size: 14px;
-        line-height: 1.43;
-        margin-bottom: 20px;
-    }
+.hero-btn-logo {
+  fill: $color-accent;
+  align-items: center;
+  @include desk {
+    width: 10px;
+    height: 23px;
+  }
 }
 
-.hero-bg-btn{
-    background-color: #FFFFFF;
+.hero-content {
+  padding-top: 194px;
+  padding-bottom: 158px;
+  position: relative;
+  z-index: 10;
+  @include tab {
+    padding-top: 102px;
+    padding-bottom: 190px;
+    height: 416px;
+  }
+  @include desk {
+    padding-top: 147px;
+    padding-bottom: 316px;
+    height: 664px;
+  }
+}
+
+.hero-title {
+  font-family: 'Titan One', Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  min-width: 218px;
+  text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @include tab {
+    font-size: 22px;
+    line-height: 1.25;
+    width: 162px;
+  }
+  @include desk {
+    font-size: 38px;
+    line-height: 1.18;
+    width: 277px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+  }
+}
+
+.hero-title-accent {
+  font-size: 48px;
+  line-height: 0.96;
+  color: $color-accent;
+  text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @include tab {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 30px;
+  }
+}
+
+.hero-numbers-list {
+  display: none;
+  @include tab {
+    display: block;
+  }
+}
+
+.hero-box {
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero-numbers-item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  @include desk {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+  }
+}
+
+.hero-number {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+
+  @include desk {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    @include desk{
-        width: 26px;
-        height: 26px;
+    position: absolute;
+    left: 26px;
+    top: -4px;
+    z-index: -1;
+    @include desk {
+      width: 30px;
+      height: 30px;
+      left: 62px;
     }
+  }
 }
 
-.hero-btn-logo{
-    fill: $color-accent;
-    align-items: center;
-    @include desk{
-        width: 10px;
-        height: 23px;
-    }
+.hero-unit {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
-.hero-content{
-    padding-top: 194px;
-    padding-bottom: 158px;
-    position: relative;
-    z-index: 10;
-    @include tab{
-        padding-top: 102px;
-        padding-bottom: 190px;
-        height: 416px;
-    }
-    @include desk{
-        padding-top: 147px;
-        padding-bottom: 316px;
-        height: 664px;
-    }
+.hero-btn {
+  display: flex;
+  margin-top: 20px;
 }
 
-.hero-title{
-    font-family: 'Titan One', Tahoma, sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    min-width: 218px;
-    text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
-    @include tab{
-        font-size: 22px;
-        line-height: 1.25;
-        width: 162px;
-    }
-    @include desk{
-        font-size: 38px;
-        line-height: 1.18;
-        width: 277px;
-    }
-    @media screen and (max-width: 320px){
-        font-size: 24px;
-    }
+.btn-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-accent;
+  border-radius: 20px;
+  border: none;
+  height: 24px;
+  min-width: 63px;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @include tran_sh_bg();
+
+  @include desk {
+    height: 40px;
+    min-width: 107px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 10px #d87991;
+    background-color: #c7133e;
+  }
 }
 
-.hero-title-accent{
-    font-size: 48px;
-    line-height: 0.96;
-    color: $color-accent;
-    text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
-    @include tab{
-        font-size: 34px;
-        line-height: 0.91;
-    }
-    @include desk{
-        font-size: 58px;
-        line-height: 0.9;
-    }
-    @media screen and (max-width: 320px){
-        font-size: 30px;
-    }
+.btn-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  height: 24px;
+  min-width: 83px;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $color-accent;
+
+  @include tran_sh_bg_col();
+
+  @include desk {
+    height: 40px;
+    min-width: 138px;
+    font-size: 14px;
+    line-height: 1.29;
+    margin-left: 12px;
+  }
+  &:hover,
+  &:focus {
+    color: #7c0b27;
+    background-color: #ecebeb;
+    box-shadow: 2px 2px 10px 2px #d87991;
+  }
 }
-
-.hero-numbers-list{
-    display: none;
-    @include tab{
-        display: block;
-    }
-}
-
-.hero-box{
-    @include tab{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.hero-numbers-item{
-    position: relative;
-    &:not(:last-child){
-        margin-bottom: 14px;
-    }
-    @include desk{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: flex-end;
-    }
-}
-
-.hero-number{
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $color-accent;
-
-    @include desk{
-        font-size: 46px;
-        line-height: 1.15;
-    }
-    &::after{
-        content: "";
-        width: 16px;
-        height: 16px;
-        background-color: #FFFFFF;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        left: 26px;
-        top: -4px;
-        z-index: -1;
-        @include desk{
-            width: 30px;
-            height: 30px;
-            left: 62px;
-        }
-    }
-}
-
-.hero-unit{
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: center;
-    color: #FFFFFF;
-    @include desk{
-        font-size: 14px;
-        line-height: 1.29;
-    }
-}
-
-.hero-btn{
-    display: flex;
-    margin-top: 20px;
-}
-
-.btn-products{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-accent;
-    border-radius: 20px;
-    border: none;
-    height: 24px;
-    min-width: 63px;
-    font-size: 8px;
-    line-height: 1.25;
-    color: #FFFFFF;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @include desk{
-        height: 40px;
-        min-width: 107px;
-        font-size: 14px;
-        line-height: 1.29;
-    }
-    &:hover, &:focus{
-        box-shadow: 2px 2px 10px 2px #d87991;
-    }
-}
-
-.btn-about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 8px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    border: none;
-    height: 24px;
-    min-width: 83px;
-    font-size: 8px;
-    line-height: 1.25;
-    color: $color-accent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @include desk{
-        height: 40px;
-        min-width: 138px;
-        font-size: 14px;
-        line-height: 1.29;
-        margin-left: 12px;
-    }
-    &:hover, &:focus{
-        color: #7C0B27;
-        background-color: #ECEBEB;
-        box-shadow: 2px 2px 10px 2px #d87991;
-    }
-}
-
-
-
-
-
