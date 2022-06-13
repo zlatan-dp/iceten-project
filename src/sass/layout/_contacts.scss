@@ -1,289 +1,289 @@
-.contacts{
-    background-color: $bgc-about-gallery-contacts-footer;
-    background-image: linear-gradient(
-        to bottom, 
-        #ffffff 25%, #FFF5F6 25%,);
-    .container{
-        padding-left: 18px;
-        padding-right: 18px;
-    }
+.contacts {
+  background-color: $bgc-about-gallery-contacts-footer;
+  background-image: linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%);
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
-.card-list{
-    margin-bottom: 32px;
-    @include tab{
-        margin-bottom: 48px;
-        display: flex;
-        justify-content: space-between;
-    }
-    @include desk{
-        margin-bottom: 58px;
-    }
-}
-
-.contacts-card{
-    padding: 40px 32px;
-    background-color: $color-white;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    &:not(:last-child){
-        margin-bottom: 20px;
-        @include tab{
-            margin-right: 32px;
-            margin-bottom: 0;
-        }
-    }
-    @include desk{
-        padding: 40px;
-    }
-    @media screen and (max-width: 320px){
-        padding: 20px;
-    }
-}
-
-.offices-card-info{
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
-    @include tab{
-        padding-bottom: 32px;
-    }
-}
-
-.office-name{
-    height: 16px;
+.card-list {
+  margin-bottom: 32px;
+  @include tab {
+    margin-bottom: 48px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+    justify-content: space-between;
+  }
+  @include desk {
+    margin-bottom: 58px;
+  }
+}
+
+.contacts-card {
+  padding: 40px 32px;
+  background-color: $color-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(:last-child) {
     margin-bottom: 20px;
-    @include tab{
-        height: 28px;
-        font-size: 16px;
-        margin-bottom: 32px;
+    @include tab {
+      margin-right: 32px;
+      margin-bottom: 0;
     }
-    @media screen and (max-width: 320px){
-        font-size: 10px;
-    }
+  }
+  @include desk {
+    padding: 40px;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
 }
 
-.cafe{
-    background-color: #F0D1A5;
-    width: 80px;
-    @media screen and (max-width: 320px){
-        width: auto;
-    }
+.offices-card-info {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  @include tab {
+    padding-bottom: 32px;
+  }
 }
 
-.foodtruck{
-    background-color: #C2E297;
-    width: 130px;
-    @media screen and (max-width: 320px){
-        width: auto;
-    }
-}
-
-.office-city{
-    margin-bottom: 8px;
-    color: #000000;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    @include tab{
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-    @include desk{
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-}
-
-.office-about{
-    color: $text-color-second;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    @include tab{
-        font-size: 14px;
-        line-height: 1.66;
-    }
-    @include desk{
-        font-size: 16px;
-        line-height: 1.83;
-    }
-}
-
-.offices-card-times{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
-    @include tab{
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}
-
-.contacts-card-times-item:not(:last-child){
-    margin-bottom: 8px;
-    @include tab{
-        margin-bottom: 12px;
-    }
-}
-
-
-.contacts-card-times-days{
-    color: #000000;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    @include tab{
-        font-size: 14px;
-    }
-    @include desk{
-        font-size: 16px;
-    }
-
-}
-
-.contacts-card-times-time{
-    color: #FFA5BA;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    @include tab{
-        font-size: 14px;
-    }
-    @include desk{
-        font-size: 16px;
-    }
-
-}
-
-.offices-card-contacts{
-    padding-top: 24px;
-    @include tab{
-        padding-top: 32px;
-    }
-}
-
-.contact-item{
-    color: #907E82;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    @include tab{
-        font-size: 14px;
-        line-height: 1.83;
-    }
-    @include desk{
-        font-size: 16px;
-    }
-
-}
-
-.contact-tel, .contact-email{
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus{
-        color: $color-accent;
-    }
-}
-
-.contacts-btn{
-    @include tab{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.btn-location{
-    border: none;
-    background-color: $color-accent;
-    color: #ffffff;
-    font-weight: 700;
+.office-name {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+  @include tab {
+    height: 28px;
     font-size: 16px;
-    line-height: 1.31;
-    border-radius: 22px;
-    min-width: 162px;
-    height: 44px;
-    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 10px;
+  }
+}
+
+.cafe {
+  background-color: #f0d1a5;
+  width: 80px;
+  @media screen and (max-width: 320px) {
+    width: auto;
+  }
+}
+
+.foodtruck {
+  background-color: #c2e297;
+  width: 130px;
+  @media screen and (max-width: 320px) {
+    width: auto;
+  }
+}
+
+.office-city {
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  @include tab {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  @include desk {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.office-about {
+  color: $text-color-second;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  @include tab {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+
+.offices-card-times {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  @include tab {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts-card-times-item:not(:last-child) {
+  margin-bottom: 8px;
+  @include tab {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts-card-times-days {
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.contacts-card-times-time {
+  color: #ffa5ba;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.offices-card-contacts {
+  padding-top: 24px;
+  @include tab {
+    padding-top: 32px;
+  }
+}
+
+.contact-item {
+  color: #907e82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  @include tab {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.contact-tel,
+.contact-email {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.contacts-btn {
+  @include tab {
     display: flex;
-    align-items: center;
     justify-content: center;
-    &::after{
-        content: "";
-        margin-left: 8px;
-        width: 8px;
-        height: 10px;
-        background-image: url(../images/arrow-icon.png);
-        background-repeat: no-repeat;
-    }
-    @include tab{
-        margin: 0;
-    }
-    @include desk{
-        min-width: 200px;
-    }
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+  }
+}
+
+.btn-location {
+  border: none;
+  background-color: $color-accent;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  min-width: 162px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: '';
+    margin-left: 8px;
+    width: 8px;
+    height: 10px;
+    background-image: url(../images/arrow-icon.png);
+    background-repeat: no-repeat;
+  }
+  @include tab {
+    margin: 0;
+  }
+  @include desk {
+    min-width: 200px;
+  }
+
+  @include tran_sh_bg_col();
+
+  &:hover,
+  &:focus {
     background: #ffffff;
     color: $color-accent;
 
-    &:hover, &:focus{
-        box-shadow: 2px 2px 10px 2px #d87991;
-    }
-        &::after{
-            content: "";
-            margin-left: 8px;
-            width: 8px;
-            height: 10px;
-            background-image: url(../images/arrow-icon-red.png);
-            background-repeat: no-repeat;
-        }
-    }
-}
-
-.btn-franchise{
-    border: none;
-    background-color: #ffffff;
-    color: $color-accent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    border-radius: 22px;
-    min-width: 162px;
-    height: 44px;
-    margin: 10px auto 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &::after{
-        content: "";
-        margin-left: 13px;
-        width: 8px;
-        height: 10px;
-        background-image: url(../images/arrow-icon-red.png);
-        background-repeat: no-repeat;
-    }
-    @include tab{
-        margin: 0;
-        margin-left: 15px;
-    }
-    @include desk{
-        min-width: 180px;
-    }
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        box-shadow: 2px 2px 10px 2px #d87991;
+      box-shadow: 2px 2px 10px 2px #d87991;
     }
+    &::after {
+      content: '';
+      margin-left: 8px;
+      width: 8px;
+      height: 10px;
+      background-image: url(../images/arrow-icon-red.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.btn-franchise {
+  border: none;
+  background-color: #ffffff;
+  color: $color-accent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  min-width: 162px;
+  height: 44px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: '';
+    margin-left: 13px;
+    width: 8px;
+    height: 10px;
+    background-image: url(../images/arrow-icon-red.png);
+    background-repeat: no-repeat;
+  }
+  @include tab {
+    margin: 0;
+    margin-left: 15px;
+  }
+  @include desk {
+    min-width: 180px;
+  }
+  @include tran_sh_bg();
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 10px 2px #d87991;
+    background-color: #ecebeb;
+  }
 }
