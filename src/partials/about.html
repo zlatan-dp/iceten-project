@@ -26,7 +26,7 @@
                 <p class="text-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
 
                     Aliquam erat volutpat. Aenean accumsan.</p>
-                <button type="button" class="about-btn">Read more 
+                <button type="button" class="about-btn" data-modal-open>Read more 
                     <svg class="about-icon-btn" width="8" height="8">
                         <use href="./images/svg/symbol-defs.svg#icon-Vector-1"></use>
                     </svg>
@@ -34,15 +34,15 @@
             </div>
         </div>
     </div>
-    <div class="about-modal">
-        <div class="container ">
-            <button type="button" class="about-close-btn">
+    <div class="about-modal is-hidden" data-modal>
+        <div class="container about-modal-box">
+            <button type="button" class="about-close-btn" aria-label="Переключатель мобильного меню" data-modal-close>
                 <svg width="14" height="14">
                     <use class="about-icon-cross"
                     href="./images/svg/btn-close-mob-menu.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="about-modal-title over-title">On this page we will lead you through all the stages of production of ice-cream on the factory</h2>
+            <h2 class="about-modal-title over-title">On this page we will lead you through all the stages of production of <span class="about-modal-title-accent">ice-cream</span></h2>
             <ul class="about-list">
                 <li class="about-list-item">We choose the freshest and most qualitative ingredients;</li>
                 <li class="about-list-item">We thoroughly check them in our certified laboratory;</li>
