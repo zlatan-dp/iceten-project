@@ -42,7 +42,7 @@
 
   @include desk {
     width: 528px;
-    height: 850px;
+    height: 900px;
   }
 
   &__close-btn {
@@ -221,6 +221,25 @@
   }
 }
 
+.checkbox-wrap {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 287px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.checkbox-choice {
+  @media screen and (max-width: 286px) {
+    margin-bottom: 4px;
+  }
+}
+
 .checkbox-choice__label,
 .radio-choice__label {
   display: flex;
@@ -264,21 +283,17 @@
     border-color: $color-accent;
   }
 }
-.checkbox-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  &:not(:last-child) {
-    margin-bottom: 5px;
-  }
-}
+
 .number__label {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   letter-spacing: 0.04em;
   color: $text-color-second;
+
+  @media screen and (max-width: 286px) {
+    margin-bottom: 4px;
+  }
 
   @include tab {
     font-size: 14px;
