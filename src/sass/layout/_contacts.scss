@@ -36,6 +36,9 @@
     @include desk{
         padding: 40px;
     }
+    @media screen and (max-width: 320px){
+        padding: 20px;
+    }
 }
 
 .offices-card-info{
@@ -63,16 +66,25 @@
         font-size: 16px;
         margin-bottom: 32px;
     }
+    @media screen and (max-width: 320px){
+        font-size: 10px;
+    }
 }
 
 .cafe{
     background-color: #F0D1A5;
     width: 80px;
+    @media screen and (max-width: 320px){
+        width: auto;
+    }
 }
 
 .foodtruck{
     background-color: #C2E297;
     width: 130px;
+    @media screen and (max-width: 320px){
+        width: auto;
+    }
 }
 
 .office-city{
@@ -124,14 +136,9 @@
     }
 }
 
-.contact-item{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #907E82;
-}
+// .contact-item{
+
+// }
 
 .contacts-card-times-days{
     color: #000000;
@@ -145,6 +152,9 @@
     @include desk{
         font-size: 16px;
     }
+    // @media screen and (max-width: 320px){
+    //     font-size: 11px;
+    // }
 }
 
 .contacts-card-times-time{
@@ -158,6 +168,9 @@
     @include desk{
         font-size: 16px;
     }
+    // @media screen and (max-width: 320px){
+    //     font-size: 9px;
+    // }
 }
 
 .offices-card-contacts{
@@ -226,6 +239,20 @@
     @include desk{
         min-width: 200px;
     }
+    
+    &:hover,
+    &:focus {
+    background: #ffffff;
+    color: $color-accent;
+        &::after{
+            content: "";
+            margin-left: 8px;
+            width: 8px;
+            height: 10px;
+            background-image: url(../images/arrow-icon-red.png);
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 .btn-franchise{
@@ -256,5 +283,18 @@
     }
     @include desk{
         min-width: 180px;
+    }
+    &:hover,
+    &:focus {
+    background: $color-accent;
+    color: $color-white;
+        &::after{
+            content: "";
+            margin-left: 8px;
+            width: 8px;
+            height: 10px;
+            background-image: url(../images/arrow-icon.png);
+            background-repeat: no-repeat;
+        }
     }
 }
