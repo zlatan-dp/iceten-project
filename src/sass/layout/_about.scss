@@ -4,27 +4,39 @@
 }
 
 .about-bg {
-    background-image: url('/src/images/about-milk-mob-1x.png');
-    background-size: contain;
-    background-position: 0 78%;
-    background-repeat: no-repeat;
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('/src/images/about-milk-mob-2x.png');
-    }
-
-    @include tab {
-        background-image: url('/src/images/about-milk-desk-1x.png');
+        background-image: url('/src/images/about-milk-mob-1x.png');
         background-size: contain;
         background-position: 0 78%;
         background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('/src/images/about-milk-desk-2x.png');
+        background-image: url('/src/images/about-milk-mob-2x.png');
         }
 
+    @include tab {
+            background-image: url('/src/images/about-milk-desk-1x.png');
+            background-size: contain;
+            background-position: 0 85%;
+            background-repeat: no-repeat;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('/src/images/about-milk-desk-2x.png');
+            }
+        }
+    
+    @include desk {
+            background-image: url('/src/images/about-milk-desk-1x.png');
+            background-size: contain;
+            background-position: 0 110%;
+            background-repeat: no-repeat;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('/src/images/about-milk-desk-2x.png');
+            }
+        }   
 }
 
 .top-text {
