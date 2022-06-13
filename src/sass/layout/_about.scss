@@ -1,6 +1,30 @@
 .about {
     background-color: $bgc-about-gallery-contacts-footer;
-    position: relative;
+    // position: relative;
+}
+
+.about-bg {
+    background-image: url('/src/images/about-milk-mob-1x.png');
+    background-size: contain;
+    background-position: 0 78%;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/about-milk-mob-2x.png');
+    }
+
+    @include tab {
+        background-image: url('/src/images/about-milk-desk-1x.png');
+        background-size: contain;
+        background-position: 0 78%;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/src/images/about-milk-desk-2x.png');
+        }
+
 }
 
 .top-text {
@@ -94,22 +118,23 @@
     }
 }
 
-.about-pic-milk {
-    position: absolute;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    bottom: 200px;
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        display: none;
-    }
-    @include tab {
-    bottom: 0;
-    }
-    @include desk {
-    bottom: 0;
-    }
-}
+// .about-pic-milk {
+//     position: absolute;
+
+//     width: 100vw;
+//     left: 0;
+//     right: 0;
+//     bottom: 200px;
+//     @media screen and (min-width: 768px) and (max-width: 1199px){
+//         display: none;
+//     }
+//     @include tab {
+//     bottom: 0;
+//     }
+//     @include desk {
+//     bottom: 0;
+//     }
+// }
 
 .about-btn {
     display: inline-flex;
@@ -129,43 +154,49 @@
     align-items: center;
     justify-content: center;
 
-    &::after{
-        content: "";
-        margin-left: 8px;
-        width: 8px;
-        height: 10px;
-        background-image: url(../images/arrow-icon-red.png);
-        background-repeat: no-repeat;
-    }
-
-    @include transition(background-color );
+    @include transition(background-color);
 
     &:hover,
     &:focus {
-    background: $color-accent;
-    color: $color-white;
-        &::after{
-            content: "";
-            margin-left: 8px;
-            width: 8px;
-            height: 10px;
-            background-image: url(../images/arrow-icon.png);
-            background-repeat: no-repeat;
-        }
+        background-color: #ECEBEB;
+        cursor: pointer;
     }
+
+
+
+    // &::after{
+    //     content: "";
+    //     margin-left: 8px;
+    //     width: 8px;
+    //     height: 10px;
+    //     background-image: url(../images/arrow-icon-red.png);
+    //     background-repeat: no-repeat;
+    // }
+
+    // @include transition(background-color );
+
+    // &:hover,
+    // &:focus {
+    // background: $color-accent;
+    // color: $color-white;
+    //     &::after{
+    //         content: "";
+    //         margin-left: 8px;
+    //         width: 8px;
+    //         height: 10px;
+    //         background-image: url(../images/arrow-icon.png);
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 }
 
-// .about-icon-btn {
-//     margin-left: 14px;
+.about-icon-btn {
+    margin-left: 14px;
 
-// }
-
+}
 
 .aout-box-text {
     @include tab {
         max-width: 334px;
-    }
-    @include desk {
-
     }
 }
