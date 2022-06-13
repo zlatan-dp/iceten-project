@@ -20,7 +20,6 @@
         margin-bottom: 16px;
         background-color: $bgc-reviews;
         position: relative;
-
         &::before {
             content: '';
             display: block;
@@ -187,8 +186,9 @@
     .reviews{
         &__box{
             height: auto;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
 
             &::before{
                 position: static;

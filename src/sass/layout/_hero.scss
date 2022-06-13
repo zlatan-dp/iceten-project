@@ -172,6 +172,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     min-width: 218px;
+    text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
     @include tab{
         font-size: 22px;
         line-height: 1.25;
@@ -191,6 +192,7 @@
     font-size: 48px;
     line-height: 0.96;
     color: $color-accent;
+    text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
     @include tab{
         font-size: 34px;
         line-height: 0.91;
@@ -291,8 +293,7 @@
     font-size: 8px;
     line-height: 1.25;
     color: #FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include desk{
         height: 40px;
         min-width: 107px;
@@ -300,9 +301,7 @@
         line-height: 1.29;
     }
     &:hover, &:focus{
-        color: $color-accent;
-        background-color: #FFFFFF;
-        // box-shadow: 2px 2px 10px 2px #d87991;
+        box-shadow: 2px 2px 10px 2px #d87991;
     }
 }
 
@@ -319,7 +318,7 @@
     font-size: 8px;
     line-height: 1.25;
     color: $color-accent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include desk{
         height: 40px;
         min-width: 138px;
@@ -328,9 +327,9 @@
         margin-left: 12px;
     }
     &:hover, &:focus{
-        color: #FFFFFF;
-        background-color: $color-accent;
-        // box-shadow: 2px 2px 10px 2px #d87991;
+        color: #7C0B27;
+        background-color: #ECEBEB;
+        box-shadow: 2px 2px 10px 2px #d87991;
     }
 }
 

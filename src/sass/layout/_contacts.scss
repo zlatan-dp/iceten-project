@@ -136,9 +136,6 @@
     }
 }
 
-// .contact-item{
-
-// }
 
 .contacts-card-times-days{
     color: #000000;
@@ -152,9 +149,7 @@
     @include desk{
         font-size: 16px;
     }
-    // @media screen and (max-width: 320px){
-    //     font-size: 11px;
-    // }
+
 }
 
 .contacts-card-times-time{
@@ -168,9 +163,7 @@
     @include desk{
         font-size: 16px;
     }
-    // @media screen and (max-width: 320px){
-    //     font-size: 9px;
-    // }
+
 }
 
 .offices-card-contacts{
@@ -239,11 +232,15 @@
     @include desk{
         min-width: 200px;
     }
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
     background: #ffffff;
     color: $color-accent;
+
+    &:hover, &:focus{
+        box-shadow: 2px 2px 10px 2px #d87991;
+    }
         &::after{
             content: "";
             margin-left: 8px;
@@ -284,17 +281,9 @@
     @include desk{
         min-width: 180px;
     }
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    background: $color-accent;
-    color: $color-white;
-        &::after{
-            content: "";
-            margin-left: 8px;
-            width: 8px;
-            height: 10px;
-            background-image: url(../images/arrow-icon.png);
-            background-repeat: no-repeat;
-        }
+        box-shadow: 2px 2px 10px 2px #d87991;
     }
 }
