@@ -1,6 +1,6 @@
 .about {
     background-color: $bgc-about-gallery-contacts-footer;
-    // position: relative;
+    position: relative;
 }
 
 .about-bg {
@@ -211,4 +211,90 @@
     @include tab {
         max-width: 334px;
     }
+}
+
+// --------------------ABOUT-MODAL-------------------
+
+.about-modal{
+    position: absolute;
+    width: 100wv;
+    border-radius: 15px;
+    background-color: $bgc-about-gallery-contacts-footer;
+    // background-image: linear-gradient(rgba(118, 119, 129, 0.4), rgba(192, 194, 211, 0.4)), url('../images/hero-icecream-mob-1x.png');
+    background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)) url('../images/hero-icecream-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    // background-position: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include tab{
+        background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)),url('../images/hero-icecream-tab-1x.png');
+    }
+    @include desk{
+        background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)) url('../images/hero-icecream-desk-1x.png');
+    }
+}
+
+.about-modal-title {
+    text-align: center;
+}
+
+.about-list {
+    text-align: left;
+    list-style: none;
+    // color:$color-accent;
+    color: #907e82;
+}
+
+.about-list-item{
+    max-width: 75%;
+    // text-align: left;
+    // &:nth-child(even){
+    //     text-align: right;
+    // }
+
+    // &:last-child{
+    //     text-align: center;
+    // }
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+
+    @include tab {
+        font-size: 14px;
+    }
+
+    @include desk {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+.about-close-btn {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    margin-top: 20px;
+    background-color: transparent;
+    fill: #d41443;
+    transition: 400ms;
+        &:hover .about-icon-cross {
+        fill: #ECEBEB;
+        }
+        &:focus .about-icon-cross {
+        fill: #ECEBEB;
+        }
+
+        @include tab {
+            margin-top: 32px;
+        }
+    
+        @include desk {
+            margin-top: 16px;
+        }
 }
