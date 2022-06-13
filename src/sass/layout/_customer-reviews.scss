@@ -1,5 +1,5 @@
 .reviews {
-    background-color: $bgc-reviews;
+    
 
     &__item {
         display: flex;
@@ -15,9 +15,32 @@
     }
 
     &__box{
-        padding: 30px 50px 17px 50px;
+        width: 100%;
+        padding-top: 30px;
         margin-bottom: 16px;
-        line-height: 30px;
+        background-color: $bgc-reviews;
+    }
+
+    &__box-group{
+        width: 180px;
+        height: 275px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-left: 10px;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 40px;
+            width: 54px;
+            background-image: url('../images/brackets.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
     }
 
     &__text {
@@ -27,15 +50,7 @@
         text-align: center;
         color: $text-color-black;
         max-width: 157px;
-        
-        &::before {
-            content: '';
-            display: block;
-            height: 40px;
-            width: 54px;
-            background-image: url('../images/brackets.png');
-            background-size: contain;
-        }
+        margin: 0 auto;
     }
 
     &__slider{
@@ -57,6 +72,8 @@
             content: '';
             display: block;
             background-image: url('../images/group-of-circles.png');
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 32px;
             height: 4px;
             position: absolute;
@@ -69,6 +86,8 @@
             content: '';
             display: block;
             background-image: url('../images/hr-dots.png');
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 72px;
             height: 12px;
             position: absolute;
@@ -76,5 +95,83 @@
             transform: translate(-50%);
             bottom: 0;
         }
+    }
+}
+
+.underline {
+    background-image: linear-gradient(to right, #E1E1E1, #E1E1E1 100%);
+    background-position: 0 100%;
+    background-size: 180px 1px;
+    background-repeat: repeat-x;
+}
+
+@include tab{
+    .reviews{
+        &__foto {
+            margin-bottom: 20px;
+        }
+    
+        &__box{
+            width: 620px;
+            height: 164px;
+            padding-top: 20px;
+            margin-bottom: 4px;
+        }
+
+        &__box-group{
+            width: 608px;
+            height: 108px;
+            padding-left: 40px;
+
+            &::before {
+                top: 0;
+                left: 15px;
+            }
+        }
+
+        &__text{
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+            max-width: 514px;
+        }
+
+        &__name{
+            font-size: 16px;
+            padding-top: 16px;
+        }
+    }
+}
+
+@include desk{
+    .reviews{
+        &__foto {
+            margin-bottom: 16px;
+        }
+
+        &__box{
+            width: 1034px;
+            height: 138px;
+            padding-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        &__box-group{
+            width: 822px;
+            height: 75px;
+            padding-left: 40px;
+        }
+
+        &__text{
+            font-size: 16px;
+            line-height: 1.86;
+            max-width: 750px;
+        }
+
+        &__name{
+            font-size: 20px;
+            padding-top: 16px;
+        }
+
     }
 }
