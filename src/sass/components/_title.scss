@@ -14,6 +14,9 @@
     font-size: 58px;
     line-height: 1.14;
   }
+  @media screen and (max-width: 320px){
+    font-size: 26px;
+  }
 }
 
 .over-title {
@@ -31,5 +34,8 @@
   @include desk {
     font-size: 30px;
     line-height: 1.13;
+  }
+  @media screen and (max-width: 320px){
+    font-size: 16px;
   }
 }
