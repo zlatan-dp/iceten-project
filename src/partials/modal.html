@@ -1,0 +1,218 @@
+<div class="backdrop-modal" data-modal>
+  <div class="modal">
+    <p class="modal__title">Let`s order the best products</p>
+
+    <form>
+      <div class="modal__field">
+        <label class="modal__label" for="modal-user-name">Name</label>
+        <div class="modal__wrap">
+          <input
+            class="modal__input"
+            type="text"
+            name="modal-user-name"
+            id="modal-user-name"
+            required
+          />
+          <!-- <svg class="modal__icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-modal-person"></use>
+          </svg> -->
+        </div>
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="modal-user-tel">Phone</label>
+        <div class="modal__wrap">
+          <input
+            class="modal__input"
+            type="tel"
+            name="modal-user-tel"
+            id="modal-user-tel"
+            required
+          />
+          <!-- <svg class="modal__icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-modal-phone"></use>
+          </svg> -->
+        </div>
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="modal-user-email">E-mail</label>
+        <div class="modal__wrap">
+          <input
+            class="modal__input"
+            type="email"
+            name="modal-user-email"
+            id="modal-user-email"
+          />
+          <!-- <svg class="modal__icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-modal-email"></use>
+          </svg> -->
+        </div>
+      </div>
+
+      <p class="modal__title">What is your choice?</p>
+      <div class="modal__checkbox">
+        <div class="checkbox-wrap">
+          <div class="checkbox-choice">
+            <input
+              class="checkbox-choice__input visually-hidden"
+              type="checkbox"
+              name="products"
+              value="Ice_cream"
+              id="icecream"
+            />
+            <label class="checkbox-choice__label" for="icecream"
+              >Ice cream</label
+            >
+          </div>
+
+          <label class="number__label">
+            <input
+              class="number__input"
+              type="number"
+              name="boxes"
+              min="0"
+              max="150"
+            />
+            the number of boxes
+          </label>
+        </div>
+
+        <div class="checkbox-wrap">
+          <div class="checkbox-choice">
+            <input
+              class="checkbox-choice__input visually-hidden"
+              type="checkbox"
+              name="products"
+              value="Ice_coffee"
+              id="icecoffee"
+            />
+            <label class="checkbox-choice__label" for="icecoffee"
+              >Ice coffee</label
+            >
+          </div>
+          <label class="number__label">
+            <input
+              class="number__input"
+              type="number"
+              name="boxes"
+              min="0"
+              max="150"
+            />
+            the number of boxes
+          </label>
+        </div>
+
+        <div class="checkbox-wrap">
+          <div class="checkbox-choice">
+            <input
+              class="checkbox-choice__input visually-hidden"
+              type="checkbox"
+              name="products"
+              value="Milkshakes"
+              id="milkshakes"
+            />
+            <label class="checkbox-choice__label" for="milkshakes"
+              >Milkshakes
+            </label>
+          </div>
+          <label class="number__label">
+            <input
+              class="number__input"
+              type="number"
+              name="boxes"
+              min="0"
+              max="150"
+            />
+            the number of boxes
+          </label>
+        </div>
+      </div>
+
+      <p class="modal__title">Payment method</p>
+      <div class="modal__radio">
+        <div class="radio-choice">
+          <input
+            class="radio-choice__input visually-hidden"
+            type="radio"
+            name="payment"
+            value="cash"
+            id="cash"
+          />
+          <label class="radio-choice__label" for="cash">with cash</label>
+        </div>
+
+        <div class="radio-choice">
+          <input
+            class="radio-choice__input visually-hidden"
+            type="radio"
+            name="payment"
+            value="card"
+            id="card"
+          />
+          <label class="radio-choice__label" for="card">with a card</label>
+        </div>
+
+        <div class="radio-choice">
+          <input
+            class="radio-choice__input visually-hidden"
+            type="radio"
+            name="payment"
+            value="invoice"
+            id="invoice"
+          />
+          <label class="radio-choice__label" for="invoice"
+            >payment of an invoice</label
+          >
+        </div>
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="delivery-address"
+          >Delivery address</label
+        >
+
+        <input
+          class="modal__input"
+          type="text"
+          name="delivery-address"
+          id="delivery-address"
+          required
+        />
+      </div>
+
+      <div class="modal__field">
+        <label class="modal__label" for="modal-user-text">Comments</label>
+        <textarea
+          class="modal__text"
+          name="modal-user-text"
+          id="modal-user-text"
+          placeholder="Your comments"
+        ></textarea>
+      </div>
+
+      <div class="modal__checkbox">
+        <div class="checkbox-choice">
+          <input
+            class="checkbox-choice__input visually-hidden"
+            type="checkbox"
+            name="policy"
+            value="policy"
+            id="policy"
+          />
+          <label class="checkbox-choice__label" for="policy"
+            >I want to receive newsletters</label
+          >
+        </div>
+      </div>
+
+      <button class="" type="submit">Send</button>
+    </form>
+
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <!-- <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+      </svg> -->
+    </button>
+  </div>
+</div>
