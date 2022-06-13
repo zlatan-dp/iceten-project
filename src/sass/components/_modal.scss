@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
 
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.85);
 
   transition: opacity 250ms linear, visibility 250ms linear;
 
@@ -22,7 +22,7 @@
   transition: transform 250ms linear;
 
   width: 90vw;
-  min-height: 609px;
+  height: 90vh;
   padding: 40px;
 
   background-color: #ffb8ca;
@@ -32,14 +32,18 @@
 
   overflow-y: auto;
 
-  //   @include media(480px) {
-  //     width: 450px;
-  //   }
+  @include mob {
+    width: 290px;
+  }
 
-  //   @include media(1200px) {
-  //     width: 528px;
-  //     height: 850px;
-  //   }
+  @include tab {
+    width: 450px;
+  }
+
+  @include desk {
+    width: 528px;
+    height: 850px;
+  }
 
   &__close-btn {
     display: flex;
@@ -61,7 +65,7 @@
   }
 
   &__close-btn:hover {
-    border-color: #d41443;
+    border-color: $color-accent;
   }
 
   &__close-icon {
@@ -71,7 +75,7 @@
 
     .modal__close-btn:hover &,
     .modal__close-btn:focus & {
-      fill: #d41443;
+      fill: $color-accent;
     }
   }
   &__title {
@@ -81,26 +85,29 @@
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
-    color: #ffffff;
-
-    // @include media(1200px) {
-    //   line-height: 1.15;
-    // }
+    color: $text-color-second;
   }
 
   &__field {
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__label {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 
+    font-weight: 500;
     font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    line-height: 1.62;
+    letter-spacing: 0.04em;
+    color: $text-color-second;
+
+    @include tab {
+      font-size: 14px;
+      line-height: 1.76;
+    }
   }
 
   &__wrap {
@@ -112,7 +119,7 @@
     min-height: 30px;
     padding-left: 32px;
 
-    color: #907e82;
+    color: $text-color-second;
     line-height: 1.71;
     border: 2px solid #ffffff;
     border-radius: 4px;
@@ -124,7 +131,11 @@
 
     &:focus,
     &:hover {
-      border-color: #d41443;
+      border-color: $color-accent;
+    }
+
+    &--null {
+      padding-left: 16px;
     }
   }
 
@@ -139,7 +150,7 @@
 
     .modal__input:focus + &,
     .modal__input:hover + & {
-      fill: #d41443;
+      fill: $color-accent;
     }
   }
 
@@ -148,7 +159,7 @@
     height: 90px;
     padding: 12px 16px;
 
-    color: #907e82;
+    color: $text-color-second;
     line-height: 1.71;
     border: 2px solid #ffffff;
     border-radius: 4px;
@@ -161,30 +172,52 @@
 
     &:focus,
     &:hover {
-      border-color: #d41443;
+      border-color: $color-accent;
     }
+  }
 
-    &::placeholder {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.77;
-      letter-spacing: 0.04em;
-      color: rgba(117, 117, 117, 0.5);
-    }
+  &__text::placeholder,
+  &__input::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.77;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
   }
 
   &__checkbox,
   &__radio {
     max-width: 370px;
     margin-bottom: 10px;
-
-    // @include media(1200px) {
-    //   max-width: 448px;
-    // }
   }
 
   .backdrop-modal.is-hidden & {
     transform: translate(0, 0) scale(0.5) skew(30deg);
+  }
+
+  &__send-btn {
+    display: block;
+    margin: 0 auto;
+
+    height: 40px;
+    min-width: 107px;
+
+    font-size: 14px;
+    line-height: 1.29;
+    align-items: center;
+    text-align: center;
+    background-color: $color-accent;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+
+    transition: color 250ms linear, background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -192,19 +225,18 @@
 .radio-choice__label {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
-  @media screen and (max-width: 319px) {
-    flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  letter-spacing: 0.04em;
+  color: $text-color-second;
+
+  @include tab {
+    font-size: 14px;
+    line-height: 1.76;
   }
-
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
-  //   @include media(1280px) {
-  //     line-height: 1.71;
-  //   }
 
   &::before {
     content: '';
@@ -221,7 +253,7 @@
   .checkbox-choice__input:checked + &::before,
   .radio-choice__input:checked + &::before {
     border: none;
-    background-color: #d41443;
+    background-color: $color-accent;
 
     background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
@@ -229,7 +261,7 @@
   }
 
   .checkbox-choice__input:focus + &::before {
-    border-color: #d41443;
+    border-color: $color-accent;
   }
 }
 .checkbox-wrap {
@@ -242,16 +274,23 @@
   }
 }
 .number__label {
+  font-weight: 500;
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  line-height: 1.62;
+  letter-spacing: 0.04em;
+  color: $text-color-second;
+
+  @include tab {
+    font-size: 14px;
+    line-height: 1.76;
+  }
 }
 
 .number__input {
   width: 50px;
   height: 30px;
 
-  color: #907e82;
+  color: $text-color-second;
 
   border: 2px solid #ffffff;
   border-radius: 4px;
@@ -263,7 +302,7 @@
 
   &:focus,
   &:hover {
-    border-color: #d41443;
+    border-color: $color-accent;
   }
 }
 .radio-choice {
