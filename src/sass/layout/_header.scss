@@ -58,15 +58,15 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-  color: #ffffff;
+  color: $color-white;
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $color-accent;
   }
 }
 
 .nav-menu__link.current {
-  color: #d41443;
+  color: $color-accent;
 }
 
 .menu-order__btn {
@@ -79,8 +79,8 @@
     font-size: 16px;
     line-height: 1.31;
     border-radius: 22px;
-    color: #d41443;
-    background-color: #fafafa;
+    color: $color-accent;
+    background-color: $bgc-reviews;
     border-color: transparent;
     padding: 10px 30px;
 
