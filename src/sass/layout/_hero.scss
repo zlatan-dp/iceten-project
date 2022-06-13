@@ -16,8 +16,9 @@
     left: 36px;
     width: 344px;
     height: 344px;
-    background-image: url('../images/ellipse-all.png');
-    background-repeat: no-repeat;
+    background-color: $color-circle;
+    border-radius: 50%;
+    border: none;
     @include tab{
         top: 43px;
         left: 248px;
@@ -29,7 +30,6 @@
         left: 517px;
         width: 534px;
         height: 534px;
-        background-image: url('../images/ellipse-all-desk.png');
     }
 }
 
