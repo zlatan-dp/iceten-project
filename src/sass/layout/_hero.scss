@@ -149,20 +149,17 @@
 .hero-content{
     padding-top: 194px;
     padding-bottom: 158px;
-    // padding: 194px 0 158px 20px;
     position: relative;
     z-index: 10;
     @include tab{
         padding-top: 102px;
         padding-bottom: 190px;
-        // padding: 102px 32px 190px 32px;
         height: 416px;
     }
     @include desk{
         padding-top: 147px;
         padding-bottom: 316px;
         height: 664px;
-        // padding: 147px 32px 316px 16px;
     }
 }
 
@@ -185,6 +182,9 @@
         line-height: 1.18;
         width: 277px;
     }
+    @media screen and (max-width: 320px){
+        font-size: 24px;
+    }
 }
 
 .hero-title-accent{
@@ -198,6 +198,9 @@
     @include desk{
         font-size: 58px;
         line-height: 0.9;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 30px;
     }
 }
 
