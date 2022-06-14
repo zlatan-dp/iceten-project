@@ -67,6 +67,8 @@
   color: $color-white;
   padding: 30px 5px;
 
+  @include transition(color);
+
   &:hover,
   &:focus {
     color: $color-accent;
