@@ -218,7 +218,7 @@
 .about-modal{
     position: absolute;
     width: 280px;
-    min-height: 850px;
+    min-height: 600px;
     border-radius: 15px;
     background-color: $bgc-about-gallery-contacts-footer;
     // background-image: linear-gradient(rgba(118, 119, 129, 0.4), rgba(192, 194, 211, 0.4)), url('../images/hero-icecream-mob-1x.png');
@@ -242,6 +242,7 @@
         background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)), url('../images/hero-icecream-desk-1x.png');
         width: 1200px;
         min-height: 600px;
+        background-position: 100% 100%;
     }
 }
 
