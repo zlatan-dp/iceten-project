@@ -9,16 +9,13 @@
 .advantages-list {
   @include tab {
     display: flex;
-    flex-wrap: wrap;
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-right: -45px;
-    }
   }
 }
 
 .advantages-item {
-  max-width: 230px;
+  @media screen and (max-width: 767px) {
+    max-width: 230px;
+  }
 
   @include tab {
     width: calc(100% / 3 - 45px);
@@ -29,17 +26,14 @@
   }
 
   @include desk {
-    width: 270px;
+    width: calc(100% / 3 - 120px);
+    margin-right: 120px;
   }
 }
 
 .advantages-item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
-  }
-
-  @include desk {
-    margin-right: 155px;
   }
 }
 
