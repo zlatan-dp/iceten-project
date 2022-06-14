@@ -2,7 +2,6 @@
   background-color: $bgc-hero-header;
   overflow: hidden;
   .container {
-    // padding: 0;
     position: relative;
   }
 }
@@ -126,14 +125,23 @@
 }
 
 .hero-bg-btn {
+  display: none;
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
   width: 18px;
   height: 18px;
+  @include tab{
+    display: block;
+  }
   @include desk {
     width: 26px;
     height: 26px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 10px 2px #d87991;
+    background-color: #ecebeb;
   }
 }
 
