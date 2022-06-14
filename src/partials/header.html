@@ -1,40 +1,43 @@
-<header class="header container">
-  <a href="https://IceCream.com">
-    <img
-      src="./images/logo-pic.png"
-      alt="Logo"
-      width="199"
-      height="50"
-      class="header-logo"
-    />
-  </a>
+<!--HEADER-->
 
-  <nav class="header-nav">
-    <ul class="">
-      <li class="">
-        <a href="" class="">Home</a>
-      </li>
-      <li class="">
-        <a href="" class="">About us</a>
-      </li>
-      <li class="">
-        <a href="" class="">How it’s made?</a>
-      </li>
-      <li class="">
-        <a href="" class="">Our products</a>
-      </li>
-      <li class="">
-        <a href="" class="">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <button type="button" class="header-btn__menuopen">
-    <svg width="20" height="12" aria-label="Переключатель мобильного меню">
-      <use
-        class="header-icon__burger"
-        href="./images/svg/symbol-defs.svg#icon-burger-btn-open"
-      ></use>
-    </svg>
-  </button>
+<header class="header">
+  <div class="container">
+    <div class="wrapper-nav">
+      <a href="#home" target="_top">
+        <img
+          src="./images/logo-pic.png"
+          alt="Logo"
+          width="199"
+          height="50"
+          class="header-logo"
+        />
+      </a>
+      <ul class="nav-menu__list list">
+        <li class="nav-menu__item">
+          <a href="#home" class="nav-menu__link current link">Home</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#about" class="nav-menu__link link">About us</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#advantages" class="nav-menu__link link">How it`s made?</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#products" class="nav-menu__link link">Our products</a>
+        </li>
+        <li class="nav-menu__item">
+          <a href="#contact" class="nav-menu__link link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="menu-open-btn">
+        <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+          <use
+            class="icon-open"
+            href="./images/svg/symbol-defs.svg#icon-burger-btn-open"
+          ></use>
+        </svg>
+      </button>
+      <button type="button" class="menu-order__btn buy-open">Buy Now</button>
+    </div>
+  </div>
 </header>

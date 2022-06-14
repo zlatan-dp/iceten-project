@@ -1,0 +1,27 @@
+.gallery {
+    background-image: linear-gradient(to bottom, #fff5f6 50%, #ffff 50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+}
+
+.gallery-list__item {
+    display: none;
+  @media screen and (min-width: 320px) {
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 11px;
+    padding-right: 13px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

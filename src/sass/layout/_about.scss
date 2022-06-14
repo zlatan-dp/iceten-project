@@ -1,0 +1,342 @@
+.about {
+    background-color: $bgc-about-gallery-contacts-footer;
+    position: relative;
+}
+
+.about-bg {
+  background-image: url('/src/images/about-milk-mob-1x.png');
+  background-size: contain;
+  background-position: 0 78%;
+  background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/images/about-milk-mob-2x.png');
+  }
+
+  @include tab {
+    background-image: url('/src/images/about-milk-desk-1x.png');
+    background-size: contain;
+    background-position: 0 85%;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/about-milk-desk-2x.png');
+    }
+  }
+
+  @include desk {
+    background-image: url('/src/images/about-milk-desk-1x.png');
+    background-size: contain;
+    background-position: 0 110%;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/about-milk-desk-2x.png');
+    }
+  }
+}
+
+.top-text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 32px;
+
+  @include tab {
+    margin-bottom: 40px;
+  }
+  @include desk {
+    margin-bottom: 80px;
+  }
+}
+
+.about-box {
+  @include tab {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include desk {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.box-cow {
+  margin-bottom: 40px;
+  @include tab {
+    max-width: 336px;
+    margin-bottom: 0;
+  }
+
+  @include desk {
+    min-width: 501px;
+    margin-right: 139px;
+  }
+}
+
+.text-first {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 220px;
+  margin-bottom: 40px;
+
+  color: $text-color-black;
+
+  @include tab {
+    max-width: 334px;
+    font-size: 14px;
+  }
+
+  @include desk {
+    min-width: 463px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.text-second {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 220px;
+  margin-bottom: 20px;
+
+  color: $text-color-second;
+
+  @include tab {
+    max-width: 334px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  @include desk {
+    min-width: 463px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+// .about-pic-milk {
+//     position: absolute;
+
+//     width: 100vw;
+//     left: 0;
+//     right: 0;
+//     bottom: 200px;
+//     @media screen and (min-width: 768px) and (max-width: 1199px){
+//         display: none;
+//     }
+//     @include tab {
+//     bottom: 0;
+//     }
+//     @include desk {
+//     bottom: 0;
+//     }
+// }
+
+.about-btn {
+  display: inline-flex;
+
+  font-family: 'DM Sans';
+  background-color: $color-white;
+  color: $text-title-color;
+  border: transparent;
+
+  border-radius: 22px;
+  min-width: 176px;
+  min-height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include tran_sh_bg();
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    box-shadow: 2px 2px 10px 2px #d87991;
+  }
+
+  // &::after{
+  //     content: "";
+  //     margin-left: 8px;
+  //     width: 8px;
+  //     height: 10px;
+  //     background-image: url(../images/arrow-icon-red.png);
+  //     background-repeat: no-repeat;
+  // }
+
+  // @include transition(background-color );
+
+  // &:hover,
+  // &:focus {
+  // background: $color-accent;
+  // color: $color-white;
+  //     &::after{
+  //         content: "";
+  //         margin-left: 8px;
+  //         width: 8px;
+  //         height: 10px;
+  //         background-image: url(../images/arrow-icon.png);
+  //         background-repeat: no-repeat;
+  //     }
+  // }
+}
+
+.about-icon-btn {
+  margin-left: 14px;
+}
+
+.aout-box-text {
+  @include tab {
+    max-width: 334px;
+  }
+}
+
+// -------------------------ABOUT-MODAL------------------------
+
+.about-modal{
+    position: absolute;
+    width: 280px;
+    min-height: 600px;
+    border-radius: 15px;
+    background-color: $bgc-about-gallery-contacts-footer;
+    // background-image: linear-gradient(rgba(118, 119, 129, 0.4), rgba(192, 194, 211, 0.4)), url('../images/hero-icecream-mob-1x.png');
+    background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)), url('../images/hero-icecream-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    // background-position: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) ;
+    @include transition(btransform , opacity , visibility );
+    opacity: 1;
+    @include tab{
+        background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)),url('../images/hero-icecream-tab-1x.png');
+        width: 700px;
+        min-height: 500px;
+
+    }
+    @include desk{
+        background-image: linear-gradient(rgba(243, 238, 245, 0.329), rgba(245, 240, 245, 0.4)), url('../images/hero-icecream-desk-1x.png');
+        width: 1200px;
+        min-height: 600px;
+        background-position: 100% 100%;
+    }
+}
+
+.about-modal-box {
+    @include tab{
+        background-image: url(/src/images/spisok_eng.png);
+        background-repeat: no-repeat;
+        background-position: 85% 20%;
+    }
+    @include desk{
+        background-image: url(/src/images/spisok_eng.png);
+        background-repeat: no-repeat;
+        background-position: 70% 20%;
+    }
+
+}
+
+.about-modal-title {
+    text-align: center;
+    margin-bottom: 10px;
+    @include tab {
+        margin-bottom: 20px;
+        }
+    @include desk {
+        margin-bottom: 30px;
+        }
+}
+
+.about-modal-title-accent {
+    color: #d41443;
+}
+
+.about-list {
+    text-align: left;
+    list-style: none;
+    // color:$color-accent;
+    color: #907e82;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    // background-image: url(/src/images/about-modal.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+}
+
+.about-list-item{
+    max-width: 75%;
+    // text-align: left;
+    // &:nth-child(even){
+    //     text-align: right;
+    // }
+
+    // &:last-child{
+    //     text-align: center;
+    // }
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+
+    @include tab {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    @include desk {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+.about-close-btn {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    margin-top: 20px;
+    background-color: transparent;
+    fill: #d41443;
+    transition: 400ms;
+        &:hover .about-icon-cross {
+        fill: #ECEBEB;
+        }
+        &:focus .about-icon-cross {
+        fill: #ECEBEB;
+        }
+
+        @include tab {
+            margin-top: 25px;
+        }
+    
+        @include desk {
+            margin-top: 16px;
+        }
+}
+
+.about-modal .is-hidden{
+    transform: translate(-50%, -50%) scale(0.8);
+    @include transition(btransform , opacity , visibility );
+}

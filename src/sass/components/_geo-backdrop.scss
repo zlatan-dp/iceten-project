@@ -1,0 +1,49 @@
+.geo-backdrop {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.geomodal {
+  width: 80vw;
+  height: 80vh;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 200ms ease-in-out 100ms, opacity 200ms ease-in-out 100ms;
+
+  .geo-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.geomodal-close-btn {
+  position: absolute;
+  z-index: 21;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffffa4;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geomodal-close-icon {
+  fill: #000;
+}
