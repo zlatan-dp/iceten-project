@@ -14,6 +14,9 @@
     font-size: 58px;
     line-height: 1.14;
   }
+  @media screen and (max-width: 320px){
+    font-size: 26px;
+  }
 }
 
 .over-title {
@@ -24,12 +27,15 @@
   text-transform: uppercase;
   color: $text-color-accent-second;
   @include tab {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
   @include desk {
     font-size: 30px;
     line-height: 1.13;
+  }
+  @media screen and (max-width: 320px){
+    font-size: 16px;
   }
 }
