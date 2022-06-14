@@ -223,19 +223,20 @@
   color: #ffffff;
   max-width: 218px;
   text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+  }
   @include tab {
     font-size: 22px;
     line-height: 1.25;
-    width: 162px;
+    max-width: 162px;
   }
   @include desk {
     font-size: 38px;
     line-height: 1.18;
-    width: 277px;
+    max-width: 277px;
   }
-  @media screen and (max-width: 320px) {
-    font-size: 24px;
-  }
+
 }
 
 .hero-title-accent {
@@ -243,6 +244,9 @@
   line-height: 0.96;
   color: $color-accent;
   text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @media screen and (max-width: 320px) {
+    font-size: 30px;
+  }
   @include tab {
     font-size: 34px;
     line-height: 0.91;
@@ -251,9 +255,7 @@
     font-size: 58px;
     line-height: 0.9;
   }
-  @media screen and (max-width: 320px) {
-    font-size: 30px;
-  }
+
 }
 
 .hero-numbers-list {
