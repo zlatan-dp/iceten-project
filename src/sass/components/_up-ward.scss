@@ -1,0 +1,47 @@
+.scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
+  color: #ffa5ba;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #d41443;
+  opacity: 0;
+  transition: 0.2s;
+  transform: translateY(25px);
+}
+
+.scroll-up::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  content: '⇧';
+}
+
+.scroll-up:hover {
+  color: #d41443;
+}
+
+.scroll-up--activity {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-up___svg-path {
+  box-sizing: border-box;
+  fill: none;
+  stroke: #ffa5ba;
+  stroke-width: 4px;
+  transition: 0.2s;
+}
