@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalgeoBtn: document.querySelector('[geo-modal-open]'),
-    closeModalgeoBtn: document.querySelector('[geo-modal-close]'),
-    modalgeo: document.querySelector('[geo-modal]'),
+    openModalgeoBtn: document.querySelector('.btn-location'),
+    closeModalgeoBtn: document.querySelector('.geomodal-close-btn'),
+    modalgeo: document.querySelector('.geo-backdrop'),
   };
 
   refs.openModalgeoBtn.addEventListener('click', toggleModalgeo);
