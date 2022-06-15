@@ -1,9 +1,7 @@
 .about {
   background-color: $bgc-about-gallery-contacts-footer;
   position: relative;
-}
 
-.about-bg {
   background-image: url('/src/images/about-milk-mob-1x.png');
   background-size: contain;
   background-position: 0 78%;
@@ -16,9 +14,7 @@
 
   @include tab {
     background-image: url('/src/images/about-milk-desk-1x.png');
-    background-size: contain;
     background-position: 0 85%;
-    background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -28,9 +24,7 @@
 
   @include desk {
     background-image: url('/src/images/about-milk-desk-1x.png');
-    background-size: contain;
-    background-position: 0 110%;
-    background-repeat: no-repeat;
+    background-position: center 110%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
