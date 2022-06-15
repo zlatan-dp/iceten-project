@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openAboutBtn: document.querySelector('[about-modal-open]'),
-    closeAboutBtn: document.querySelector('[about-modal-close]'),
-    about: document.querySelector('[about-modal]'),
+    openAboutBtn: document.querySelector('.about-btn'),
+    closeAboutBtn: document.querySelector('.about-close-btn'),
+    about: document.querySelector('.about-backdrop'),
   };
 
   refs.openAboutBtn.addEventListener('click', toggleAbout);
