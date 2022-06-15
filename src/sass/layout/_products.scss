@@ -120,18 +120,36 @@ height: 535px;
     width: 100%;
    height: 100%;
    background-image: url(/src/images/products-icecream-1-mob-1x.png);
+   @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-1-mob-2x.png);
+  }
   }
   @include tab {
     top: -140px;
     width: 100%;
    height: 100%;
    background-image: url(/src/images/products-icecream-1-tab-1x.png);
+   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-1-tab-2x.png);
+  }
   }
   @include desk {
     top: -250px;
     width: 100%;
    height: 100%;
    background-image: url(/src/images/products-icecream-1-desk-1x.png);
+   @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-1-desk-2x.png);
+  }
   }
 }
 }
@@ -159,18 +177,36 @@ height: 535px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-2-mob-1x.png);
+     @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-2-mob-2x.png);
+  }
     }
     @include tab {
       top: -140px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-2-tab-1x.png);
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-2-tab-2x.png);
+  }
     }
     @include desk {
       top: -250px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-2-desk-1x.png);
+     @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-2-desk-2x.png);
+  }
     }
   }
   @include tab {
@@ -208,18 +244,36 @@ height: 535px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-3-mob-1x.png);
+     @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-3-mob-2x.png);
+  }
     }
     @include tab {
       top: -140px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-3-tab-1x.png);
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-2-tab-2x.png);
+  }
     }
     @include desk {
       top: -250px;
       width: 100%;
      height: 100%;
      background-image: url(/src/images/products-icecream-3-desk-1x.png);
+     @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-icecream-3-desk-2x.png);
+  }
     }
   }
   &:hover,
