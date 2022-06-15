@@ -18,12 +18,11 @@
   padding: 10px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 200ms ease-in-out 100ms, opacity 200ms ease-in-out 100ms;
+  transform: translate(-50%, -50%) scale(1) skew(0);
+  @include transition(transform);
 
   .geo-backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.3);
-    opacity: 0;
+    transform: translate(0, 0) scale(0.5) skew(30deg);
   }
 }
 
@@ -34,7 +33,7 @@
   right: 8px;
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #ffffffa4;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;

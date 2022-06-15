@@ -1,0 +1,153 @@
+// -------------------------ABOUT-MODAL------------------------
+
+.about-backdrop {
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+    overflow-y: auto;
+  }
+  
+  .about-modal {
+    position: absolute;
+    width: 280px;
+    height: 90vh;
+    overflow-y: auto;
+    max-height: 650px;
+    border-radius: 15px;
+    background-color: $bgc-about-gallery-contacts-footer;
+    // background-image: linear-gradient(rgba(118, 119, 129, 0.4), rgba(192, 194, 211, 0.4)), url('../images/hero-icecream-mob-1x.png');
+    background-image: linear-gradient(
+        rgba(243, 238, 245, 0.329),
+        rgba(245, 240, 245, 0.4)
+      ),
+      url('../images/hero-icecream-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    // background-position: center;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) skew(0);
+  
+    @include transition(transform);
+  
+    @include tab {
+      background-image: linear-gradient(
+          rgba(243, 238, 245, 0.329),
+          rgba(245, 240, 245, 0.4)
+        ),
+        url('../images/hero-icecream-tab-1x.png');
+      width: 700px;
+    }
+    @include desk {
+      background-image: linear-gradient(
+          rgba(243, 238, 245, 0.329),
+          rgba(245, 240, 245, 0.4)
+        ),
+        url('../images/hero-icecream-desk-1x.png');
+      width: 1200px;
+      background-position: 100% 100%;
+    }
+  }
+  
+  .about-modal-box {
+    @include tab {
+      background-image: url(/src/images/spisok_eng.png);
+      background-repeat: no-repeat;
+      background-position: 85% 20%;
+    }
+    @include desk {
+      background-image: url(/src/images/spisok_eng.png);
+      background-repeat: no-repeat;
+      background-position: 70% 20%;
+    }
+  }
+  
+  .about-modal-title {
+    text-align: center;
+    margin-bottom: 10px;
+    @include tab {
+      margin-bottom: 20px;
+    }
+    @include desk {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .about-modal-title-accent {
+    color: #d41443;
+  }
+  
+  .about-list {
+    text-align: left;
+    list-style: none;
+    // color:$color-accent;
+    color: #907e82;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    // background-image: url(/src/images/about-modal.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
+  
+  .about-list-item {
+    max-width: 75%;
+    // text-align: left;
+    // &:nth-child(even){
+    //     text-align: right;
+    // }
+  
+    // &:last-child{
+    //     text-align: center;
+    // }
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+  
+    @include tab {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  
+    @include desk {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+  
+  .about-close-btn {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    margin-top: 20px;
+    background-color: transparent;
+    fill: #d41443;
+    transition: 400ms;
+    &:hover .about-icon-cross {
+      fill: #ecebeb;
+    }
+    &:focus .about-icon-cross {
+      fill: #ecebeb;
+    }
+  
+    @include tab {
+      margin-top: 25px;
+    }
+  
+    @include desk {
+      margin-top: 16px;
+    }
+  }
+  
+  .about-backdrop.is-hidden .about-modal {
+    transform: translate(0, 0) scale(0.5) skew(30deg);
+  }
+  

@@ -1,3 +1,9 @@
+@mixin min-mob {
+  @media screen and (max-width: 319px) {
+    @content;
+  }
+}
+
 @mixin mob {
   @media screen and (min-width: 320px) {
     @content;
@@ -18,8 +24,31 @@
 
 // Транзишн
 
-@mixin transition($tp, $td: 300ms, $tf: ease-in-out) {
-  transition-property: $tp;
-  transition-duration: $td;
-  transition-timing-function: $tf;
+@mixin transition($tp, $td: 200ms, $tf: ease-in-out) {
+  transition: $tp $td $tf;
+}
+
+@mixin tran_sh_bg(
+  $tpsh: box-shadow,
+  $tdsh: 200ms,
+  $tfsh: ease-in-out,
+  $tpbg: background-color,
+  $tdbg: 200ms,
+  $tfbg: ease-in-out
+) {
+  transition: $tpsh $tdsh $tfsh, $tpbg $tdbg $tfbg;
+}
+
+@mixin tran_sh_bg_col(
+  $tpsh: box-shadow,
+  $tdsh: 200ms,
+  $tfsh: ease-in-out,
+  $tpbg: background-color,
+  $tdbg: 200ms,
+  $tfbg: ease-in-out,
+  $tpcol: color,
+  $tdcol: 200ms,
+  $tfcol: ease-in-out
+) {
+  transition: $tpsh $tdsh $tfsh, $tpbg $tdbg $tfbg, $tpcol $tdcol $tfcol;
 }
