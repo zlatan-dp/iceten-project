@@ -64,7 +64,7 @@
     font-size: 16px;
     margin-bottom: 32px;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     font-size: 10px;
   }
 }
@@ -72,7 +72,7 @@
 .cafe {
   background-color: #f0d1a5;
   width: 80px;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     width: auto;
   }
 }
@@ -80,7 +80,7 @@
 .foodtruck {
   background-color: #c2e297;
   width: 130px;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     width: auto;
   }
 }

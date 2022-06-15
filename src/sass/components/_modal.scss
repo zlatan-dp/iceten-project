@@ -7,9 +7,9 @@
   width: 100%;
   height: 100%;
 
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.4);
 
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 
   overflow-y: auto;
 }
@@ -19,8 +19,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) skew(0);
-  transition: transform 250ms linear;
-
+  @include transition(transform);
   width: 90vw;
   height: 90vh;
   padding: 40px;
@@ -42,7 +41,6 @@
 
   @include desk {
     width: 528px;
-    height: 900px;
   }
 
   &__close-btn {
@@ -51,8 +49,8 @@
     align-items: center;
 
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 15px;
+    right: 15px;
 
     width: 30px;
     height: 30px;

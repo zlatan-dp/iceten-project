@@ -2,8 +2,11 @@
   background-color: $bgc-hero-header;
   overflow: hidden;
   .container {
-    // padding: 0;
     position: relative;
+
+    @media screen and (max-width: 768px){
+      min-width: 100%;
+    }
   }
 }
 
@@ -14,11 +17,13 @@
   z-index: 2;
   top: 83px;
   left: 36px;
+  // left: 25%;
   width: 344px;
   height: 344px;
   background-color: $color-circle;
   border-radius: 50%;
   border: none;
+  
   @include tab {
     top: 43px;
     left: 248px;
@@ -37,61 +42,97 @@
   height: 410px;
   width: 171px;
   z-index: 3;
-  background-image: url('../images/hero-icecream-mob-1x.png');
-  background-repeat: no-repeat;
   position: absolute;
   top: 94px;
+  // right: 5%;
   right: 32px;
+  // left: 45%;
+  background-image: url('../images/hero-icecream-mob-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/hero-icecream-mob-2x.png');}
   @include tab {
-    background-image: url('../images/hero-icecream-tab-1x.png');
     top: 80px;
     right: 303px;
     height: 336px;
     width: 143px;
+    background-image: url('../images/hero-icecream-tab-1x.png');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero-icecream-tab-2x.png');}
   }
   @include desk {
-    background-image: url('../images/hero-icecream-desk-1x.png');
     top: 108px;
     right: 408px;
     height: 567px;
     width: 236px;
-  }
+    background-image: url('../images/hero-icecream-desk-1x.png');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-icecream-desk-2x.png');}
+}
 }
 
 .hero-img-milk {
   @include tab {
-    background-image: url('../images/hero-milk-tab-1x.png');
     width: 152px;
     height: 154px;
     position: absolute;
     left: 32px;
     bottom: 16px;
+    background-image: url('../images/hero-milk-tab-1x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero-milk-tab-2x.png');}
   }
   @include desk {
-    background-image: url('../images/hero-milk-desk-1x.png');
     width: 213px;
     height: 216px;
     left: 16px;
     bottom: 60px;
+    background-image: url('../images/hero-milk-desk-1x.png');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero-milk-desk-2x.png');}
   }
 }
 
 .hero-img-girl {
   @include tab {
-    background-image: url('../images/hero-girl-tab-1x.png');
+
     width: 190px;
     height: 150px;
     position: absolute;
     right: 32px;
     top: 275px;
     z-index: 10;
+    background-image: url('../images/hero-girl-tab-1x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero-girl-tab-2x.png');}
   }
   @include desk {
-    background-image: url('../images/hero-girl-desk-1x.png');
     width: 304px;
     height: 241px;
     right: 16px;
     top: 424px;
+    background-image: url('../images/hero-girl-desk-1x.png');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/hero-girl-desk-2x.png');}
   }
 }
 
@@ -126,14 +167,23 @@
 }
 
 .hero-bg-btn {
+  display: none;
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
   width: 18px;
   height: 18px;
+  @include tab{
+    display: block;
+  }
   @include desk {
     width: 26px;
     height: 26px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 10px 2px #d87991;
+    background-color: #ecebeb;
   }
 }
 
@@ -171,21 +221,22 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  min-width: 218px;
+  max-width: 218px;
   text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+  }
   @include tab {
     font-size: 22px;
     line-height: 1.25;
-    width: 162px;
+    max-width: 162px;
   }
   @include desk {
     font-size: 38px;
     line-height: 1.18;
-    width: 277px;
+    max-width: 277px;
   }
-  @media screen and (max-width: 320px) {
-    font-size: 24px;
-  }
+
 }
 
 .hero-title-accent {
@@ -193,6 +244,9 @@
   line-height: 0.96;
   color: $color-accent;
   text-shadow: 2px 2px 5px rgb(104, 39, 48, 0.3);
+  @media screen and (max-width: 320px) {
+    font-size: 30px;
+  }
   @include tab {
     font-size: 34px;
     line-height: 0.91;
@@ -201,9 +255,7 @@
     font-size: 58px;
     line-height: 0.9;
   }
-  @media screen and (max-width: 320px) {
-    font-size: 30px;
-  }
+
 }
 
 .hero-numbers-list {
